@@ -23,7 +23,7 @@ export default class JohnDoe extends Component {
   render() {
     const {user, userFetched} = this.state;
     if(!userFetched){
-      return <div className="container SpinnerContainer"><Spinner/></div>
+      return <div className="container spinnerContainer"><Spinner/></div>
     }
     return (
       <div className="cvContainer">
