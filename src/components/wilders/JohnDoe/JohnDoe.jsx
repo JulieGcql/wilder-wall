@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './JohnDoe.scss'
 import Spinner from '../../Spinner';
+const BASE_URL = "https://peaceful-cliffs-33252.herokuapp.com/api/v1/wilders"
 const USERNAME = "david-marie"
 
 export default class JohnDoe extends Component {
@@ -13,7 +14,7 @@ export default class JohnDoe extends Component {
   }
 
   componentDidMount(){
-    fetch(`/${USERNAME}`)
+    fetch(`${BASE_URL}/${USERNAME}`)
     .then((response) => response.json())
     .then((data) => this.setState({user: data.user, userFetched: true}))
     .catch((error) => console.log(error))
