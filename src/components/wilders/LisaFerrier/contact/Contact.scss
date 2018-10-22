@@ -1,0 +1,33 @@
+.contactLisa {
+    word-wrap: break-word;
+    font-size: 0.8em;
+}
+
+.contactPicture{
+    width: 50%;
+    padding: 10px;
+}
+
+.contactBack {
+    background: white;
+    text-align: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.contactCard {
+    display: flex;
+    justify-content: center;
+}
+
+.rowContact {
+    margin: 10px;
+
+}
+
+.btn-secondary {
+    background: #77b3d4;
+    color: white;
+    border: none;
+}

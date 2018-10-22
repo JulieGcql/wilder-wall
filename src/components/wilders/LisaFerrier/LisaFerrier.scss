@@ -1,0 +1,39 @@
+#apropos, #competences, #realisations, #experience, #interets, #contact {
+    margin: 0px;
+}
+
+.imageLisa:hover {
+    transition: 0.3s;
+    transform: scale(1.1); 
+}
+
+.apropos {
+    text-align: center;
+}
+
+a:hover{
+    color: #77b3d4;
+    transition: 0.2s;
+}
+
+header {
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Heebo';
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+.competences, .interets, .contact {
+    background: #E8E8E8;
+}
+
+body {
+    background: #F5F5F5;
+}
+
+@font-face {
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    @import url('https://fonts.googleapis.com/css?family=Heebo|Roboto');
+}
