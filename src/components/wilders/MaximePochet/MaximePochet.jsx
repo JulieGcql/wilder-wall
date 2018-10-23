@@ -27,13 +27,16 @@ export default class MaximePochet extends Component {
             return <div className="container spinnerContainer"><Spinner/></div>
         }
         return (
-            <div className="MyDescription" 
+            <div className="PochetMyDescription" 
             // style={{backgroundImage: `url(${user.photo})`}}
             >
-                <img src={user.photo} className="MyPicture" />
-                <h1 className="MyName">{`${user.firstname} ${user.lastname}`}<br/>
+                <img src={user.photo} className="PochetMyPicture" />
+                <h1 className="PochetMyName">{`${user.firstname} ${user.lastname}`}<br/>
                 Développeur Web Junior React / Node JS</h1>
-                <section className="MyPresentation">
+                <section className="PochetContactMe">
+                {/* Téléphone : {`${user.phone}`} */}
+                </section>
+                <section className="PochetMyPresentation">
                     <div className=""dangerouslySetInnerHTML={createMarkup(user.wilder_side)}></div>
                     <br/>
                     <div dangerouslySetInnerHTML={createMarkup(user.bio)}></div>

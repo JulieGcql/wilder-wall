@@ -1,12 +1,12 @@
-.MyDescription{
+.PochetMyDescription{
     background-image: url('./pictures/6012001-wallpaper-black-hd.jpg');
     background-attachment: fixed;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    padding: 5vw;
     justify-items: center;
     align-items: center;
-    .MyPicture {
+    padding-right: 5vh;
+    .PochetMyPicture {
         width: 25vh;
         border-radius: 70px;
         grid-column: 1;
@@ -14,21 +14,31 @@
         position: fixed;
         margin: 8vh;
         z-index: 1;
+        width: 12vw;
     }
-    .MyName {
+    .PochetContactMe {
+        grid-column: 1;
+        position: fixed;
         color: white;
+        text-align: left;
+    }
+    .PochetMyName {
+        color: white;
+        font-size: 2.5vw;
         text-shadow: black 1px 1px, black -1px 1px, black -1px -1px, black 1px -1px;
         text-align: center;
-        padding-top: 8vh;
+        padding-top: 5vh;
+        padding-bottom: 2vh;
         position: fixed;
         width: 100%;
         background-image: url('./pictures/6012001-wallpaper-black-hd.jpg');
 
     }
-    .MyPresentation {
-        margin-top: 15vh;
+    .PochetMyPresentation {
+        margin-top: 25vh;
         grid-column: 2 / 4;
         color:white;
+        font-size: 1.5em;
     }
 
 }
