@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Spinner from '../../Spinner';
 import './MaximePochet.scss';
+import bg from './pictures/bg1.jpg'
 
 const BASE_URL = "https://peaceful-cliffs-33252.herokuapp.com/api/v1/wilders"
 const USERNAME = "maxime-pochet"
@@ -15,10 +16,10 @@ export default class MaximePochet extends Component {
     }
 
     componentDidMount(){
-    fetch(`${BASE_URL}/${USERNAME}`)
-    .then((response) => response.json())
-    .then((data) => this.setState({user: data.user, userFetched: true}))
-    .catch((error) => console.log(error))
+        fetch(`${BASE_URL}/${USERNAME}`)
+        .then((response) => response.json())
+        .then((data) => this.setState({user: data.user, userFetched: true}))
+        .catch((error) => console.log(error))
     }
 
     render() {
@@ -27,20 +28,17 @@ export default class MaximePochet extends Component {
             return <div className="container spinnerContainer"><Spinner/></div>
         }
         return (
-            <div className="PochetMyDescription" 
-            // style={{backgroundImage: `url(${user.photo})`}}
-            >
-                <img src={user.photo} className="PochetMyPicture" />
+            <div className="PochetMyDescription" style={{backgroundImage: `url(${bg})`}}>
+                <img src={user.photo} alt="Ma photo" className="PochetMyPicture" />
                 <h1 className="PochetMyName">{`${user.firstname} ${user.lastname}`}<br/>
                 Développeur Web Junior React / Node JS</h1>
                 <section className="PochetContactMe">
-                {/* Téléphone : {`${user.phone}`} */}
                 </section>
                 <section className="PochetMyPresentation">
-                    <div className=""dangerouslySetInnerHTML={createMarkup(user.wilder_side)}></div>
+                    <div className="PochetMyWilderSide" dangerouslySetInnerHTML={createMarkup(user.wilder_side)}></div>
                     <br/>
-                    <div dangerouslySetInnerHTML={createMarkup(user.bio)}></div>
-                    {/* <a href={user.cv}>Télécharger mon CV !</a> */}
+                    <div className="PochetMyBio" dangerouslySetInnerHTML={createMarkup(user.bio)}></div>
+                    <a href={user.cv} className="PochetMyCV">Télécharger mon CV !</a>
                 </section>
             </div>
         )
