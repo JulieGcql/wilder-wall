@@ -1,0 +1,28 @@
+.experience-containerJL {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    padding: 50px;
+    margin: 25px 0;
+    background-position: center;
+    background-size: cover;
+}
+
+.parcourJL {
+    color: #f3f3f3;
+    padding: 10px;
+    text-align: justify; 
+    background-color: #222;
+
+}
+
+.parcourJL h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #ffaf21;
+}
+
+.parcourJL p {
+    padding: 3px 15px;
+}

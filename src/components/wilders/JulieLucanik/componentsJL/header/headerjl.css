@@ -1,0 +1,143 @@
+.header-jl {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    text-align: center;
+
+    justify-items: center;
+    align-items: center;
+    color: #ffffff;
+}
+.header-jl .myFace {
+    width: 180px;
+    border-radius: 11%;
+    border: 5px double #fff;
+}
+
+.header-jl h1 {
+    text-transform: uppercase;
+    font-size: 4vw;
+}
+
+.header-jl h3 {
+    font-size: 2vw;
+    margin-bottom: 20px;
+}
+
+.subtitle-jl {
+    font-style: italic;
+    font-size: 1.5vw;
+}
+
+.CVjl {
+    background-color: #ef4337;
+    border: 2px solid #ef4337;
+    padding: 6px 23px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    box-shadow: 7px 4px 5px #222;
+    cursor: pointer;
+}
+
+.CVjl:hover {
+    background-color: #222;
+    border: 2px solid #f3f3f3;
+    color: #fff;
+    box-shadow: 7px 4px 5px rgb(22, 22, 22);
+}
+
+.ListJL {
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    grid-column-gap: 10px;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    margin: -60px auto 0;
+    text-align: center;
+    padding: 0 0 50px 0;
+}
+
+.ListJL .li-jl {
+    width: 250px;
+    padding: 40px;
+    list-style: none;
+    font-size: 1.4em;
+    background-color: #fff;
+    color: #222;
+    box-shadow: 4px 4px 2px rgb(151, 151, 151);
+}
+
+.ListJL .fas {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+    
+}
+
+.ListJL .fa-code{
+    color: #ef4337;
+}
+
+.ListJL .fa-users{
+    color: #1F212C;
+}
+
+.ListJL .fa-lightbulb{
+    color: #ffaf21;
+}
+
+.ListJL .fa-desktop{
+    color: #1F212C;
+}
+
+@media (max-width: 1460px) and (min-width: 1045px){
+    .ListJL {
+        
+        grid-template-columns: repeat(4, 25%);
+        grid-column-gap: 5px;
+    }
+}
+
+@media (max-width: 1044px) and (min-width: 590px){
+    .ListJL {
+        grid-template-columns: repeat(4, 25%);
+        grid-row-gap: 5px;
+        grid-column-gap: 10px;
+        margin: -60px auto 0;
+    }
+
+    .ListJL .li-jl {
+        width: 200px;
+        padding: 20px;
+        font-size: 1em;
+    }
+
+    .ListJL .fas {
+        font-size: 1.8em;
+        margin-bottom: 5px;
+        
+    }
+}
+
+@media (max-width: 589px) {
+    .ListJL {
+        grid-template-columns: repeat(2, 50%);
+        grid-row-gap: 10px;
+        margin: -120px auto 0;
+    }
+
+    .ListJL .li-jl {
+        width: 200px;
+        padding: 20px;
+        font-size: 1em;
+    }
+
+    .ListJL .fas {
+        font-size: 1.8em;
+        margin-bottom: 5px;
+        
+    }
+}

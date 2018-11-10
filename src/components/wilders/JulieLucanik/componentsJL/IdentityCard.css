@@ -1,0 +1,32 @@
+.identity-containerJl {
+    margin: 25px auto;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+}
+
+.identity-containerJl h2 {
+    text-align: center;
+    grid-column: 1 / 3;
+    padding: 5px;
+}
+
+.identity-listJl {
+    margin-left: 20px;
+    list-style: none;
+    grid-column: 1 / 2;
+    background-color: #fff;
+    padding: 20px 20px 20px 40px;
+}
+
+.identity-listJl li{
+    font-size: 1.2em;
+    padding-bottom: 7px; 
+}
+
+.identity-listJl li a{
+    color: #ef4337;
+}
+
+.identity-listJl li .fas, .identity-listJl li .far, .identity-listJl li .fab{
+    font-size: 1.3em;
+}
