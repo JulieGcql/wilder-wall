@@ -1,28 +1,40 @@
-.experience-containerJL {
+.wild-containerJL {
     display: grid;
     justify-content: center;
     justify-items: center;
     align-content: center;
     padding: 50px;
-    margin: 25px 0;
+    margin: 25px 0 0;
     background-position: center;
     background-size: cover;
 }
 
-.parcourJL {
+.wildJL {
     color: #f3f3f3;
     padding: 10px;
     text-align: justify; 
-    background-color: #222;
-
+    background-color: #222c;
 }
 
-.parcourJL h2 {
+.logoWild {
+    width: 40px;
+    float: left;
+}
+
+
+.wildJL h2 {
     text-align: center;
     margin-bottom: 15px;
     color: #ffaf21;
 }
 
-.parcourJL p {
+.wildJL p {
     padding: 3px 15px;
 }
+
+@media (max-width: 590px) {
+    .wild-containerJL {
+        padding: 15px;
+    }
+}
+

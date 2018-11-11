@@ -2,8 +2,11 @@ import React, {Component} from 'react';
 import './JulieLucanik.css';
 import Spinner from '../../Spinner';
 import HeaderJL from './componentsJL/header/HeaderJL';
-import IdentityCardJL from './componentsJL/IdentityCard';
-import MyExperienceJL from './componentsJL/MyExperienceJL';
+import WildJL from './componentsJL/wild/WildJL';
+import MyExperienceJL from './componentsJL/experience/MyExperienceJL';
+import QualitiesJL from './componentsJL/qualities/QualitiesJL';
+import SkillsJL from './componentsJL/skills/SkillsJL';
+import FooterJL from './componentsJL/footer/FooterJL';
 
 
 class JulieLucanik extends Component {
@@ -38,17 +41,20 @@ class JulieLucanik extends Component {
                 firstname={user.firstname} 
                 lastname={user.lastname} 
                 cv={user.cv}
-            />
-
-            < IdentityCardJL 
                 phone={user.phone} 
                 email={user.email} 
                 github={user.github}
                 linkedin={user.linkedin}
             />
-
-            <MyExperienceJL bio={user.bio} />
-
+            <MyExperienceJL 
+                bio={user.bio} 
+            />
+            <QualitiesJL />
+            <WildJL 
+                wild={user.wilder_side}
+            />
+            <SkillsJL />
+            <FooterJL />
             </div>
         )
     }

@@ -1,0 +1,77 @@
+
+.identity-listJl {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    margin: -60px auto 0;
+    text-align: center;
+    padding: 0 0 50px 0;
+}
+
+.identity-listJl .little-containers-cards {
+    background-color: #fff;
+    width: 300px;
+    height: 150px;
+    display: grid;
+    align-content: center;
+    box-shadow: 4px 4px 2px rgb(151, 151, 151);
+}
+
+.identity-listJl li{
+    font-size: 1.2em;
+    padding-bottom: 7px; 
+    list-style: none;
+    
+}
+
+.fa-map-marker-alt, .fa-envelope{
+    color: #ffaf21;
+    
+}
+
+.identity-listJl li a{
+    color: #ef4337;
+}
+
+.identity-listJl li a:hover{
+    color: #ffaf21;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.identity-listJl li .fas, .identity-listJl li .far, .identity-listJl li .fab{
+    font-size: 1.3em;
+    
+}
+
+@media (max-width: 975px) and (min-width: 770px) {
+
+    .identity-listJl .little-containers-cards {
+        width: 250px;
+        height: 125px;
+    }
+    
+    .identity-listJl li{
+        font-size: 1em;
+    }
+
+}
+
+@media (max-width: 769px) {
+    .identity-listJl {
+        grid-template-columns: 1fr;
+        margin: -65px auto 0;
+    }
+    
+    .identity-listJl .little-containers-cards {
+        width: 90%;
+        height: 70px;
+    }
+    
+    .identity-listJl li{
+        font-size: 1.1em;
+        padding-bottom: 0; 
+    }
+}

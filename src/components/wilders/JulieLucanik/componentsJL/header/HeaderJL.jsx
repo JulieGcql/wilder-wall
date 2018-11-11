@@ -1,9 +1,10 @@
 import React from 'react';
-import Background from './test.png';
 import myFace from './face.jpg';
+import Background from './bgJulie.png';
 import './headerjl.css'
+import IdentityCardJL from './IdentityCard';
 
-const HeaderJL = ({lastname, firstname, cv}) => {
+const HeaderJL = ({lastname, firstname, cv, phone, email, github, linkedin}) => {
     return (
         <div>
             <div className="header-jl" style={{backgroundImage: `url(${Background})`}}>
@@ -14,16 +15,12 @@ const HeaderJL = ({lastname, firstname, cv}) => {
                 <a href={cv} className="CVjl">Mon CV </a>
                 </div>
             </div>
-                <ul className="ListJL">
-                    <li className="li-jl">
-                    <i className="fas fa-code"></i> <br /> Passionnée
-                    </li>
-                    <li className="li-jl">
-                        <i className="fas fa-users"></i> <br /> Esprit d'équipe
-                    </li>
-                    <li className="li-jl"> <i className="fas fa-lightbulb"></i> <br />Créative</li>
-                    <li className="li-jl"> <i className="fas fa-desktop"></i> <br />Autonome</li>
-                </ul>
+            <IdentityCardJL
+                phone={phone} 
+                email={email} 
+                github={github}
+                linkedin={linkedin}
+            />
         </div>
     )
 }
