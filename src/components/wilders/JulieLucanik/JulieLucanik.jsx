@@ -28,6 +28,10 @@ class JulieLucanik extends Component {
     }
 
 
+createMarkup(stringyfiedHtml) {
+    return {__html: stringyfiedHtml};
+}
+
     render() {
         const {user, userFetched} = this.state;
         if(!userFetched){
@@ -47,11 +51,13 @@ class JulieLucanik extends Component {
                 linkedin={user.linkedin}
             />
             <MyExperienceJL 
-                bio={user.bio} 
+                bio={user.bio}
+                createMarkup={(text) => this.createMarkup(text)} 
             />
             <QualitiesJL />
             <WildJL 
                 wild={user.wilder_side}
+                createMarkup={(text) => this.createMarkup(text)}
             />
             <SkillsJL />
             <FooterJL />

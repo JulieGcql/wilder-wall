@@ -62,7 +62,7 @@
 @media (max-width: 769px) {
     .identity-listJl {
         grid-template-columns: 1fr;
-        margin: -65px auto 0;
+        margin: -50px auto 0;
     }
     
     .identity-listJl .little-containers-cards {
