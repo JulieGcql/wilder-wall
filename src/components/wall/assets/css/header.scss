@@ -1,0 +1,12 @@
+.headerContainer {
+  display: flex;
+  justify-content: center;
+}
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  img {
+    margin: 15px 0px;
+  }
+}
