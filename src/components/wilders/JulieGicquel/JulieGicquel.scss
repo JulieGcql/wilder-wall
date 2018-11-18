@@ -1,0 +1,194 @@
+.spinnerContainer{
+  margin-top: 45vh;
+  text-align: center;
+}
+
+.Gicquel_Container{
+  text-align: center;
+}
+
+.light {
+  display:none;
+  animation: 3s ease-in-out; 
+}
+
+// HEADER //
+
+.Gicquel_Header {
+  background-image:url('./Super_Mario.png');
+  background-size: cover;
+  height: 55vh;
+  color: black;
+  background-position-y: 36vw;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.Gicquel_Photo {
+  margin-top: 30px;
+  height:180px;
+  width:180px;
+  border-radius:50%;
+}
+
+// BODY //
+
+.Gicquel_Infos, .Gicquel_Wild, .Gicquel_Contact, .Gicquel_CV {
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 30px;
+}
+
+.Gicquel_infosContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.Gicquel_wildSide, .Gicquel_bio, .Gicquel_contactMe, .Gicquel_infosContainer{
+  font-family: 'Press Start 2P', cursive;
+  color: black;
+}
+
+
+// TITRES // 
+
+.Gicquel_Titre {
+  padding-top: 35px;
+}
+
+.Gicquel_Sections {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.Gicquel_Button {
+  width:20em;
+  cursor: pointer;
+  background: #CE372B;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  padding: 15px;
+  font-family: 'Press Start 2P', cursive;
+  box-shadow: inset -4px -4px 0px 0px #8C2022;
+
+  &:hover,
+  &:focus {
+      background: #E76E55;
+      box-shadow: inset (-4px*1.5) (-4px*1.5) 0px 0px #8C2022;
+  }
+
+  &:active {
+      box-shadow: inset 4px 4px 0px 0px #8C2022;;
+  }
+
+  &:before,
+    &:after {
+    content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        box-sizing: content-box;
+    }
+
+    &:before {
+        top: -6px;
+        left: 0;
+        border-top: 6px black solid;
+        border-bottom: 6px black solid;
+    }
+
+    &:after {
+        left: -6px;
+        top: 0;
+        border-left: 6px black solid;
+        border-right: 6px black solid;
+    }
+
+}
+
+.Gicquel_fleche {
+  height:40px;
+  width:40px;
+  margin-left:1em; 
+}
+
+// CV BUTTON // 
+
+.Gicquel_CV {
+  padding: 30px;
+  background: #CE372B;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  font-family: 'Press Start 2P', cursive;
+  box-shadow: inset -4px -4px 0px 0px #8C2022;
+
+  &:hover,
+  &:focus {
+      background: #E76E55;
+      box-shadow: inset (-4px*1.5) (-4px*1.5) 0px 0px #8C2022;
+  }
+
+  &:active {
+      box-shadow: inset 4px 4px 0px 0px #8C2022;;
+  }
+
+  &:before,
+    &:after {
+    content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        box-sizing: content-box;
+    }
+
+    &:before {
+        top: -6px;
+        left: 0;
+        border-top: 6px black solid;
+        border-bottom: 6px black solid;
+    }
+
+    &:after {
+        left: -6px;
+        top: 0;
+        border-left: 6px black solid;
+        border-right: 6px black solid;
+    }
+
+}
+
+.Gicquel_Link {
+  text-decoration: none; 
+  color: white;
+}
+
+.Gicquel_Link:hover {
+  text-decoration: none; 
+  color: white;
+}
+
+// CONTACT //
+
+.Gicquel_Tel {
+  color: black;
+  text-decoration:none;
+  margin-top:7px;
+}
+
+.Gicquel_Tel:hover {
+  color: black;
+  text-decoration:none;
+}
+
+.Gicquel_icons {
+  height:40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  margin-right:50px;
+  margin-left:50px;
+}
