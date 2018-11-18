@@ -1,20 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Montserrat|Pacifico');
+
 .spinnerContainer {
   margin-top: 45vh;
   text-align: center;
 }
 
 .monMatricule{
- width: 80vh;
- margin: 5vh auto 0vh auto;
- padding: 2vh; 
- background-color: rgb(245, 245, 218);
- box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+  width: 120vh;
+  margin: 5vh auto 0vh auto;
+  padding: 2vh; 
+  background-color: rgb(245, 245, 218);
+  box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+  
+  h1 {
+    font-family: 'Lobster', cursive;
+   margin-top: -0.5vh;
+  }
+
   a {
-    color:black;  
+    color:black;    
   } 
+  
   a:hover {
-    color:rgb(127, 231, 158);  
+    color:#DFCA64;;  
+  }
+  
+  p {
+    margin-top: -2.5vh;
   }  
+  
+  .icones {
+    margin-left: 25%;
+   
+  }
+
+  a.lienCv {
+    margin-left: 32%;
+    font-weight: bold;
+  }
 }
 
 .cvContainer {
@@ -27,7 +50,7 @@
 }
 
 .cvbio {
- width: 80vh;
+  width: 120vh;
  margin: 5vh auto 0vh auto;
  padding: 6vh; 
  background-color: rgb(245, 245, 218);
@@ -37,25 +60,55 @@
 }
 
 .cvwild {
-  width: 80vh;
+  width: 120vh;
   margin: 5vh auto 0vh auto;
   padding: 6vh; 
   background-color: rgb(245, 245, 218);
   box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
   font-size: 1em;
   text-align: justify;
+  a {
+    color:black;  
+  } 
+  a:hover {
+    color:#DFCA64;
+  }
 }
 
 .cvpicture {
-  margin-left: auto;
-  margin-right: auto;
   width:10%;
+  overflow:hidden;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    border-radius:50px;
+    margin-bottom:4px;
 }
-@media (max-width:990px) {}
-@media (max-width:576px) {
+
+i {
+  visibility: visible;
+}
+
+i.huge {
+  visibility: hidden;
+  padding: 6vh 0 0 0;
+}
+
+// Tablettes
+
+@media (max-width:800px) {
   .monMatricule {
     width: 100%;
     padding: 6%; 
+    .icones {
+      margin-left: 0%;
+    }
+    a.lienCv {
+      margin-right: 10%;
+      margin-left: 20%;
+    }
+    p {
+      margin: 0.1vh;
+    }
   }
   .cvwild {
     width: 100%;
@@ -68,7 +121,76 @@
     font-size: 0.9em;
   }
 
+  a {
+    color:black;
+  }
+  a:hover {
+    color:rgb(114, 114, 114);
+  }
   i.huge {
+  visibility: visible;
   padding: 6vh 0 0 0;
+  box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+
 }
+.cvpicture {
+  width:10%;
+  overflow:hidden;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    border-radius:50px;
+    margin-bottom: 4px;
+}
+}
+
+// Téléphone
+
+@media (max-width:576px) {
+  .monMatricule {
+    width: 100%;
+    padding: 6%; 
+    .icones {
+      margin-left: 0%;
+    }
+    a.lienCv {
+      margin-right: 10%;
+      margin-left: 20%;
+    }
+    p {
+      margin: 0vh;
+    }
+  }
+  .cvwild {
+    width: 100%;
+    padding: 6%; 
+    font-size: 0.9em;
+  }
+  .cvbio{
+    width: 100%;
+    padding: 6%;
+    font-size: 0.9em;
+  }
+
+  a {
+    color:black;
+  }
+  a:hover {
+    color:rgb(114, 114, 114);
+  }
+  i.huge {
+  visibility: visible;
+  padding: 6vh 0 0 0;
+  box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+
+}
+
+
+.cvpicture {
+  width:20%;
+  overflow:hidden;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    border-radius:50px;
+}
+
 }
