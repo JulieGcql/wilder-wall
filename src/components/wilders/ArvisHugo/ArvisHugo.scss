@@ -1,0 +1,277 @@
+.arvisTotal{
+  size: auto;
+}
+
+
+h1{
+    font-family:"IM Fell DW Pica";
+    font-size:80px;
+}
+
+a{
+    font-family:"IM Fell DW Pica";
+    font-size:40px;
+    color:black;
+}
+
+
+.spinnerContainer{
+    margin-top: 45vh;
+    text-align: center;
+  }
+  
+  .cvContainer{
+    background-image: url("https://i.goopics.net/XgN8p.jpg");
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:75vh;
+    text-align: center;
+    margin-top: 0px;
+  }
+
+
+
+
+.arvisName{
+    display: inline-block;
+    top: 0vh;
+    position: absolute;
+    left: 8vw;
+    animation: slidein 3s ease-in 1s reverse both running;
+}
+.arvisCv{
+    display: inline-block;
+    
+    font-size: 40px;
+    position: absolute;
+    left: 8vw;
+    top: 32vh;
+    animation: slidein 3s ease-in 1s reverse both running;
+
+
+
+    
+}
+.arvisImage{
+    display: inline-block;
+    height: 140px;
+    width:140px;
+    border-style: ridge;
+    border-radius: 70px;
+    position: absolute;
+    top: 13vh;
+    left: 11vw;
+    animation: slidein 3s ease-in 1s reverse both running;
+    border-style: solid;
+    
+    border-color: cornsilk;
+}
+
+
+.arvisBio{
+    width: 90vw;
+    height: auto;
+    position: inherit;
+    padding: 4%;
+    
+    font-family: "IM Fell DW Pica";
+    padding: 5%;
+    font-size: 30px;
+    color:black;
+    background-color: #79bc78b3;;
+    border-radius: 49px;
+    margin: 4%;
+}
+
+.wilderSideArvis{
+    width: 90vw;
+    height: auto;
+    padding: 4%;
+    position: inherit;
+    bottom: 12vh;
+    right: 1vw;
+    font-family:"IM Fell DW Pica";
+    font-size: 30px;
+    color:black;
+    background-color: #79bc78b3;;
+    border-radius: 49px;
+    padding: 10px;
+    margin: 4%;
+}
+.arvisLink{
+  position: relative;
+  background-color: aliceblue !important;
+  width: 100vw;
+  height:1vh;
+}
+.whiteBck{
+  background-color: aliceblue;
+}
+
+.shake:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+  @import url('https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica');
+
+  .d {
+    animation-duration: 5s;
+    animation-name: glissement;
+    animation-iteration-count: 5s;
+  }
+
+  .departGauche {
+    animation-direction: reverse;
+  }
+  @keyframes glissement {
+    from {
+      margin-left: 0%;
+      
+    }
+  
+    to {
+      margin-left:-50%;
+      
+    }
+  }
+
+
+
+
+
+
+  ul li
+{
+position: inherit;
+list-style-type:none;
+display:inline-block;
+flex:auto;
+text-align:justify center;
+padding-right: 8vw;
+padding-left: 8vw;
+font-size:30px;  
+font-family:"IM Fell DW Pica";
+font-weight:bold;
+
+}
+
+
+
+// animation fond couleur
+
+
+
+@keyframes bgcolor {
+  0% {
+      background-color: #45a3e5
+  }
+
+  20% {
+      background-color: #66bf39
+  }
+
+  40% {
+      background-color: #005073
+  }
+
+  60% {
+      background-color: #54647c
+  }
+
+  80% {
+      background-color: #0050bc
+  }
+  100% {
+      background-color:#1045af
+}
+}
+
+body {
+  -webkit-animation: bgcolor 30s infinite;
+  animation: bgcolor 30s infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+// logo
+
+.arvisLogo{
+  
+  height: 80px;
+  width: 80px;
+  margin:20px;
+}
+
+
+
+ 
+// .rotate:hover{
+//   -webkit-animation:shak 2s infinite; 
+//   -moz-animation:shak 2s infinite;}
+// @-webkit-keyframes shak{
+// 	0%,100%{ -webkit-transform:rotate(-15deg);}
+// 	50%{-webkit-transform:rotate(15deg);}
+// }
+
+
+// responsive
+
+@media (max-width: 450px) {
+  .arvisBio{
+    width: 90vw;
+    position: inherit;
+    font-family: "IM Fell DW Pica";
+    font-size: 30px;
+    color:black;
+    background-color: #79bc78b3;;
+    border-radius: 49px;
+    padding: 10px;
+    margin:20px !important;
+}
+
+.wilderSideArvis{
+  width: 90vw;
+  position: inherit;
+  font-family: "IM Fell DW Pica";
+  font-size: 30px;
+  color: black;
+  background-color: #79bc78b3;
+  border-radius: 49px;
+  padding: 10px;
+  margin:20px !important;
+}
+.arvisLink{
+  position: relative;
+  width: 100vw;
+  height:1vh;
+}
+.arvisName{
+  position: inherit;
+}
+
+.arvisCv{
+  position: inherit;
+}
+.arvisImage{
+  position: inherit;
+}
+  }
+
+  

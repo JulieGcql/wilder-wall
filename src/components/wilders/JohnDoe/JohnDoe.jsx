@@ -27,7 +27,7 @@ export default class JohnDoe extends Component {
     }
     return (
       <div className="cvContainer">
-        <img src={user.photo} />
+        <img src={user.photo} alt="johnDoe" />
         <h1>{`${user.firstname} ${user.lastname}`}</h1>
         <div dangerouslySetInnerHTML={createMarkup(user.bio)}></div>
         <a href={user.cv}>Télécharger mon CV !</a>
