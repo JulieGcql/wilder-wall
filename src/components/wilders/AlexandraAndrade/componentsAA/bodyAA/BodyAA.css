@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Bevan|Roboto"  );
+
+.titleAlexandra{
+    color:#ec8a14;
+    font-family: 'Bevan', cursive;
+    font-size: 3.5em;
+    display: grid;
+    grid-column: 1 / 3;
+    grid-row: 1;
+    justify-content: center;
+    margin-top: 2vw;
+    text-align: center;
+}
+
+.fullTitle {
+    text-align: center;
+} 
+
+.subtitle{
+    color:#ec8a14;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+.containerBody{
+    height: 90em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 1vw;
+}
+
+.myPhoto{
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 2;
+    width: 50%;
+    justify-self: center;
+    border-radius: 50px;
+
+}
+
+.mesOutils{
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 2;
+    grid-template-columns: repeat(5, 1fr);
+
+}
+.titleOutils{
+    grid-column: 1 / 6;
+    justify-content: center;
+}
+
+.monParcours{
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 3;
+}
+
+.monCoteWild{
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 3;
+}
+
+.Projets{
+    display: grid;
+    grid-column: 1 / 3;
+    grid-row:4;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1vw;
+
+}
+
+.cine{
+    width: 100%;
+}
+ .wildo{
+    width: 100%;
+
+ }
+
+ .project3{
+     width: 100%
+ }
