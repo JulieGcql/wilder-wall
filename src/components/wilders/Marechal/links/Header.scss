@@ -1,24 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis|KoHo');
 
 .Header {
-    // background: #FEFFFD;
-    // background: radial-gradient(90% 80%,#FEFFFD, #8E8E8E);
     font-family: 'Dosis', sans-serif;
 
     h1{
         font-family: 'KoHo', sans-serif;
         color: #06BC9B;
-
+        font-size: 2em;
+        border: none;
+        margin: 0px auto;
     }
         .HeaderBlock{
             display: grid;
             grid-template-columns: 1fr 1fr;
-            // padding-bottom: 5%;
-            
+
             .Pic{
                 grid-column-start: 1;
                 align-self: center;
-                height: 50%;
                 justify-self: center;
                 border: 4px double white;
                 border-radius: 50px;
@@ -29,13 +27,9 @@
             .HeaderContent{
                 grid-column-start: 2;
                 align-self: center;
-                
+
                 h2, h3 {
                     font-family: KoHo, sans-serif;
-        
-                }
-                img{
-                    width: 40%;
                 }
             }
         }

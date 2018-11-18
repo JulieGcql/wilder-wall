@@ -16,8 +16,6 @@ return(
                 <br />
                 <br />
                 <h3>React et NodeJs</h3>
-                <img src={logo} alt="logoReact" />
-                <img src={node} alt="logoNode" />
             </div>
         </div>
         <a href={this.props.cv} target="blank">Télécharger mon CV !</a>
