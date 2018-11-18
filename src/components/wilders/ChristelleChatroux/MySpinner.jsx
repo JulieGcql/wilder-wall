@@ -8,7 +8,7 @@ const override = css`
   border-color: red;
 `;
 
-export default class Spinner extends React.Component {
+export default class MySpinner extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -21,8 +21,8 @@ export default class Spinner extends React.Component {
         <ClipLoader
           className={override}
           sizeUnit={"px"}
-          size={150}
-          color={"#123abc"}
+          size={100}
+          color={"#E40043"}
           loading={this.state.loading}
         />
       </div>

@@ -1,0 +1,544 @@
+/*
+1- HEADER
+  1-1 BACKGROUND
+  1-2 NAVBAR
+  1-3 JOB TITLE
+  1-4 RESUME TO DOWNLOAD
+
+2- INTRO
+  2-1 INTRO CONTENT
+    2-2-1 SHORT PITCH
+    2-2-2 MY FACE
+    // 2-2-3 KEY FACTS
+
+3- MAIN
+
+4- FOOTER
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Bangers|Open+Sans");
+
+//VARIABLES :
+
+$turquoise: #1abc9c;
+$asphalt: #34495e;
+$clouds: #ecf0f1;
+$titleFont: "Bangers", cursive;
+$normalFont: "Open Sans", sans-serif;
+
+// Styles for screen under 481px:
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #fafafa;
+  background-color: $asphalt;
+  font-family: $normalFont;
+
+  #root {
+    .ice_myLinks {
+      color: white;
+    }
+
+    // THIS IS THE MAIN CONTAINER (THE PAGE)
+    .ice_container {
+      .ice_headerGrid {
+        background-color: rgb(38, 68, 73);
+        display: grid;
+        grid-template-rows: 15vh 45vh 10vh 30vh;
+        grid-template-columns: 100%;
+
+        // 1-1 BACKGROUND
+        .ice_headerBg {
+          z-index: 1;
+          grid-row-start: 1;
+          grid-row-end: 5;
+          grid-column-start: 1;
+          background-image: url("images/bgCode.jpg");
+          background-size: cover;
+          opacity: 0.4;
+          border-bottom: 5px solid #fafafa;
+        }
+        // 1-2 NAVBAR
+        .ice_navLinks {
+          z-index: 999;
+          grid-row-start: 1;
+          grid-row-end: 2;
+          grid-column-start: 1;
+          display: flex;
+          justify-content: center;
+          .ice_navUl {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            width: 100%;
+            padding: 0px;
+            margin: 8px 20px;
+            .ice_navLi {
+              text-align: center;
+              font-size: 3.3vw;
+              width: 28%;
+              margin: 0 1.4vw;
+              &:hover a {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+
+        // 1-3 JOB TITLE
+        .ice_mainTitle {
+          z-index: 999;
+          grid-row-start: 2;
+          grid-row-end: 3;
+          grid-column-start: 1;
+          justify-self: center;
+          align-self: center;
+          text-align: center;
+          h1 {
+            padding: 8vh;
+            font-size: 8vw;
+            font-family: $titleFont;
+          }
+          h2 {
+            font-family: $titleFont;
+            color: blanc;
+            font-size: 6vw;
+            text-shadow: 1px 1px 1px black, 2px 2px 1px $turquoise;
+          }
+        }
+
+        // 1-4 RESUME TO DOWNLOAD
+        .ice_download {
+          z-index: 999;
+          grid-row-start: 3;
+          grid-row-end: 4;
+          grid-column-start: 1;
+          display: flex;
+          align-items: center;
+          justify-self: center;
+          text-align: center;
+          padding: 0vw 2vw;
+          color: rgb(255, 255, 255);
+          border: 4px solid rgb(202, 207, 236);
+          text-decoration: underline;
+          font-weight: bolder;
+          letter-spacing: 0.5vh;
+          box-shadow: 1px 1px 1px $turquoise, 4px 4px 4px #282d59;
+          &:hover {
+            color: rgb(255, 255, 255);
+            border: 4px solid rgb(255, 255, 255);
+            background-color: rgba(152, 151, 207, 0.151);
+          }
+        }
+      }
+
+      // 2- INTRO
+      .ice_introGrid {
+        align-self: center;
+
+        // 2-1 MY NAME
+
+        // 2-2 INTRO CONTENT
+        .ice_intro_content {
+          grid-row-start: 2;
+          grid-row-end: 3;
+          display: flex;
+          flex-direction: column-reverse;
+          padding: 10px 10vw 30px;
+          align-content: center;
+          align-items: center;
+
+          div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          //2-2-1 SHORT PITCH
+          .ice_pitch {
+            flex-direction: column;
+            width: 100%;
+            padding-bottom: 15px;
+            border-bottom: 3px groove white;
+            p {
+              margin: 0;
+              text-align: center;
+            }
+          }
+
+          //2-2-2 MY FACE
+          .ice_myFace {
+            width: 50%;
+            img {
+              padding: 0;
+              width: 65%;
+            }
+          }
+        }
+      }
+
+      // 3- MAIN
+      .ice_mainGrid {
+        display: grid;
+        .ice_mainParcours {
+          text-align: justify;
+          padding: 0 8vw;
+          h3 {
+            border-bottom: 2px white solid;
+            width: 50%;
+            padding-top: 10px;
+            font-size: 6vw;
+            font-family: $titleFont;
+            color: turquoise;
+          }
+          p {
+            font-size: 3.5vw;
+            margin: 0;
+            padding: 4vw;
+          }
+        }
+        .ice_mainSkills {
+          background-color: $clouds;
+          color: $asphalt;
+          display: flex;
+          align-items: center;
+          padding: 5vh 0;
+          margin: 5vh 0;
+          justify-content: center;
+          h3 {
+            font-family: $titleFont;
+            font-size: 5.5vw;
+            margin: 0;
+            padding-right: 3vw;
+            text-decoration: underline;
+          }
+          p {
+            font-size: 3vw;
+            margin: 0;
+            padding: 0;
+          }
+
+          img {
+            width: 10%;
+          }
+        }
+
+        .ice_mainWild {
+          text-align: justify;
+          padding: 0 8vw 25px;
+          h3 {
+            border-bottom: 2px white solid;
+            width: 50%;
+            padding-top: 10px;
+            font-size: 6vw;
+            font-family: $titleFont;
+            color: turquoise;
+          }
+          p {
+            font-size: 3.5vw;
+            margin: 0;
+            padding: 4vw;
+          }
+        }
+        .ice_mainProjects {
+          background-color: $clouds;
+          padding: 30px 8vw;
+          h3 {
+            border-bottom: 2px black solid;
+            width: 50%;
+            font-size: 6vw;
+            font-family: $titleFont;
+            color: $turquoise;
+          }
+
+          .ice_gallery {
+            display: grid;
+            grid-template-columns: 80%;
+            padding: 2vw 5vw;
+            justify-content: center;
+            div {
+              display: flex;
+              flex-direction: column;
+              box-shadow: 4px 4px 5px #939da7;
+              margin: 1vw;
+              background-color: $asphalt;
+              border: 1px solid $asphalt;
+              margin: 10px;
+              img {
+                width: 100%;
+              }
+              p {
+                font-size: 3vw;
+                text-align: center;
+                margin: 0;
+                padding: 2px;
+                span {
+                  color: red;
+                  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+                }
+              }
+            }
+            div:nth-child(2) {
+              flex-direction: column-reverse;
+              padding: 0;
+              div {
+                box-shadow: none;
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+
+      // 4- FOOTER
+      .ice_footerGrid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+
+        div {
+          padding: 5px;
+          p {
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            font-size: 3vw;
+          }
+          i {
+            font-size: 4vw;
+          }
+        }
+        div:nth-child(1) {
+          i {
+            color: $clouds;
+          }
+        }
+        div:nth-child(2) {
+          a {
+            color: $clouds;
+            text-decoration: underline;
+          }
+          i {
+            color: $turquoise;
+          }
+        }
+        div:nth-child(3) {
+          a {
+            color: $clouds;
+            text-decoration: underline;
+          }
+          i {
+            color: $clouds;
+          }
+        }
+        div:nth-child(4) {
+          a {
+            color: $clouds;
+            text-decoration: underline;
+          }
+          i {
+            color: $turquoise;
+          }
+        }
+      }
+    }
+  }
+}
+
+// * * * * * MEDIA QUERIES * * * * *
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 481px) {
+  body {
+    #root {
+      // THIS IS THE MAIN CONTAINER (THE PAGE)
+      .ice_container {
+        .ice_headerGrid {
+          grid-template-rows: 15vh 55vh 10vh 20vh;
+
+          // 1-1 BACKGROUND
+
+          // 1-2 NAVBAR
+          .ice_navLinks {
+            justify-content: flex-end;
+            .ice_navUl {
+              width: 45%;
+              .ice_navLi {
+                font-size: 1.4vw;
+                width: 25%;
+                &:hover a {
+                  font-size: 1.6vw;
+                  border-bottom: 2px white solid;
+                }
+              }
+            }
+          }
+
+          // 1-3 JOB TITLE
+          .ice_mainTitle {
+            align-self: flex-end;
+            h1 {
+              font-size: 6vw;
+            }
+            h2 {
+              font-size: 4vw;
+            }
+          }
+
+          // 1-4 RESUME TO DOWNLOAD
+        }
+
+        // 2- INTRO
+        .ice_introGrid {
+          // padding-top: 30px;
+          align-self: center;
+          display: grid;
+          grid-template-rows: 15% 85%;
+
+          // 2-1 MY NAME
+
+          // 2-2 INTRO CONTENT
+          .ice_intro_content {
+            flex-direction: row;
+            padding: 0 10vw 20px;
+            justify-content: center;
+            justify-items: center;
+
+            //2-2-1 SHORT PITCH
+            .ice_pitch {
+              width: 55%;
+              border-bottom: none;
+              p {
+                font-size: 1.6vw;
+              }
+            }
+
+            //2-2-2 MY FACE
+            .ice_myFace {
+              width: 20%;
+            }
+          }
+        }
+
+        // 3- MAIN
+        .ice_mainGrid {
+          .ice_mainParcours {
+            h3 {
+              width: 30%;
+              font-size: 2.6vw;
+            }
+            p {
+              font-size: 1.3vw;
+            }
+          }
+          .ice_mainSkills {
+            h3 {
+              font-size: 2.2vw;
+            }
+            p {
+              font-size: 1.2vw;
+            }
+
+            img {
+              width: 10%;
+            }
+          }
+
+          .ice_mainWild {
+            h3 {
+              width: 30%;
+              font-size: 2.6vw;
+            }
+            p {
+              font-size: 1.3vw;
+            }
+          }
+          .ice_mainProjects {
+            padding: 0 8vw;
+            h3 {
+              width: 30%;
+              font-size: 2.6vw;
+              padding-top: 35px;
+            }
+
+            .ice_gallery {
+              display: grid;
+              grid-template-columns: 25vw 25vw 25vw;
+              grid-template-rows: 25vw;
+              padding: 2vw 5vw;
+              justify-content: center;
+              // margin: 5vw 0;
+              div {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                box-shadow: 4px 4px 5px #939da7;
+                margin: 1vw;
+                background-color: $asphalt;
+                border: 1px solid $asphalt;
+                opacity: 0.7;
+                &:hover {
+                  opacity: 1;
+                }
+                img {
+                  width: 100%;
+                }
+                p {
+                  font-size: 1.1vw;
+                  text-align: center;
+                  margin: 0;
+                  span {
+                    color: red;
+                    text-shadow: 1px 1px 1px rgb(92, 97, 117);
+                  }
+                }
+              }
+              div:nth-child(1) {
+                justify-content: flex-start;
+              }
+              div:nth-child(2) {
+                justify-content: flex-end;
+              }
+            }
+          }
+        }
+
+        // 4- FOOTER
+        .ice_footerGrid {
+          flex-direction: row;
+          justify-content: center;
+
+          div {
+            margin: 0 30px 15px;
+            width: 15%;
+            p {
+              padding: 2px 0;
+              font-size: 1.5vw;
+            }
+          }
+          div:nth-child(2) {
+            a:hover {
+              font-weight: bold;
+              text-shadow: 1px 1px 1px black;
+            }
+          }
+          div:nth-child(3) {
+            a:hover {
+              font-weight: bold;
+              text-shadow: 1px 1px 1px black;
+            }
+          }
+          div:nth-child(4) {
+            a:hover {
+              font-weight: bold;
+              text-shadow: 1px 1px 1px black;
+            }
+          }
+        }
+      }
+    }
+  }
+}
