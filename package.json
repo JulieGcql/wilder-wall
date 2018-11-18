@@ -13,7 +13,9 @@
     "react-spinners": "^0.4.7",
     "reactstrap": "^6.5.0",
     "sass": "^1.14.3",
-    "semantic-ui": "^2.4.2"
+    "semantic-ui": "^2.4.2",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.83.0"
   },
   "scripts": {
     "start": "react-scripts start",
