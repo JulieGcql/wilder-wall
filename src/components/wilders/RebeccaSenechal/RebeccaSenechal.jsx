@@ -30,7 +30,6 @@ export default class RebeccaSenechal extends Component {
   render() {
     console.log("user :", this.state.user)
     const { user, userFetched } = this.state;
-    let linkedin = "linkedin.com/in/rebeccasenechal"
     if (!userFetched) {
       return <div className="container spinnerContainer"><Spinner /></div>
     }
@@ -39,11 +38,10 @@ export default class RebeccaSenechal extends Component {
 
         <div className="cvContainer" >
           <div className="monMatricule" id="top">          
-            <img src={user.photo} className="cvpicture" alt="visage" />
-            <h1>{`${user.firstname} ${user.lastname}`}</h1>
+            <p className="nom">{`${user.firstname} ${user.lastname}`}</p>
             <p>{user.email}</p>
             <p>{user.phone}</p>
-            <a className="lienCv" href={user.cv}>Télécharger mon CV</a>
+            <a className="lienCv" href={user.cv}> Téléchargez mon CV </a>
             <span className="icones">
                 <a href={user.github} target="_blank" rel="noopener noreferrer"><i class="large github basic icon"></i></a>
                 <a href={user.linkedin} target="_blank" rel="noopener noreferrer"><i class="large linkedin basic icon"></i></a>
@@ -66,4 +64,5 @@ function createMarkup(stringyfiedHtml) {
   return { __html: stringyfiedHtml };
 }
 
+// <div className="cvpicture"><img src={user.photo}  alt="visage" /></div>
 

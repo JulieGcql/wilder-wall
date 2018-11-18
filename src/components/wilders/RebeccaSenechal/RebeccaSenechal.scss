@@ -12,9 +12,10 @@
   background-color: rgb(245, 245, 218);
   box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
   
-  h1 {
-    font-family: 'Lobster', cursive;
-   margin-top: -0.5vh;
+  .nom {
+  font-family: 'Lobster', cursive;
+  margin-top: -0.5vh;
+  font-size: 2em;
   }
 
   a {
@@ -76,12 +77,11 @@
 }
 
 .cvpicture {
-  width:10%;
-  overflow:hidden;
-    -webkit-border-radius:50px;
-    -moz-border-radius:50px;
-    border-radius:50px;
-    margin-bottom:4px;
+margin: -2% 0 -2% 45%;
+display:flex;
+width:12%;
+
+ 
 }
 
 i {
@@ -134,13 +134,12 @@ i.huge {
 
 }
 .cvpicture {
-  width:10%;
-  overflow:hidden;
-    -webkit-border-radius:50px;
-    -moz-border-radius:50px;
-    border-radius:50px;
-    margin-bottom: 4px;
-}
+  margin: -2% 0 -2% 45%;
+  display:flex;
+  width:12%;
+  
+   
+  }
 }
 
 // Téléphone
@@ -186,11 +185,12 @@ i.huge {
 
 
 .cvpicture {
-  width:20%;
-  overflow:hidden;
-    -webkit-border-radius:50px;
-    -moz-border-radius:50px;
-    border-radius:50px;
+  margin: -10% 0 -10% 25%;
+  display:flex;
+
+
+width:45%;
+ 
 }
 
 }
