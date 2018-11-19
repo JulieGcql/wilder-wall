@@ -10,7 +10,7 @@ export default class Wilders extends Component {
           {
             this.props.wilders.map((wilder) => {
               return (
-                <Col md={{ size: 3, order: 2, offset: 1 }} key={wilder.id}>
+                <Col md={{ size: 4, order: 2, offset: 0 }} key={wilder.id}>
                   <Wilder wilder={wilder}/>
                 </Col>
               )
