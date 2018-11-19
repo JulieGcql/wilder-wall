@@ -19,7 +19,8 @@ export default class JohnDoe extends Component {
     .then((data) => this.setState({user: data.user, userFetched: true}))
     .catch((error) => console.log(error))
   }
-  
+
+  // spinner = lors du temps de chargement affiche un spinner pour l'attente;
   render() {
     const {user, userFetched} = this.state;
     if(!userFetched){

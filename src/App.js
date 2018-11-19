@@ -8,7 +8,7 @@ import LydiaDali from './components/wilders/LydiaDali/LydiaDali';
 import MaximePochet from './components/wilders/MaximePochet/MaximePochet';
 import JulieLucanik from './components/wilders/JulieLucanik/JulieLucanik';
 import JulieGicquel from './components/wilders/JulieGicquel/JulieGicquel';
-
+import Marechal from './components/wilders/Marechal/Marechal';
 class App extends Component {
   render() {
     return (
@@ -20,7 +20,9 @@ class App extends Component {
         <Route exact path="/wilders/maxime-pochet" component={MaximePochet} />
         <Route exact path="/wilders/julie-lucanik" component={JulieLucanik} />
         <Route exact path="/wilders/julie-gicquel" component={JulieGicquel} />
+        <Route exact path="/wilders/clemence-marechal" component={Marechal} />
         <Route path="/" component={NotFound} />
+        
       </Switch>
     );
   }
