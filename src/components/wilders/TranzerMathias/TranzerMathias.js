@@ -24,7 +24,7 @@ export default class TranzerMathias extends Component {
         }
         return (
 
-        <div className="cvContainer">
+        <div className="cvMathiasContainer">
         <div className="reserve">
         <div class="ui horizontal segments">
   <div class="ui segment">

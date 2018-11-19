@@ -36,7 +36,7 @@ export default class RebeccaSenechal extends Component {
     return (
       <div>
 
-        <div className="cvContainer" >
+        <div className="cvRebeccaContainer" >
           <div className="monMatricule" id="top">          
             <p className="nom">{`${user.firstname} ${user.lastname}`}</p>
             <p>{user.email}</p>

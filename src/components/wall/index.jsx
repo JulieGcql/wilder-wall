@@ -6,7 +6,7 @@ import Footer from "./elements/Footer";
 export default class index extends Component {
   render() {
     return (
-      <div>
+      <div className="wildersWallContainer">
         <Header />
         <Body />
         <Footer />

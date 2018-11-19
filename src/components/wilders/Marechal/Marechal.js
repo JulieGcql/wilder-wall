@@ -30,7 +30,7 @@ export default class Marechal extends Component {
       return <div className="container spinnerContainer"><Spinner/></div>
     }
     return (
-      <div className="cvContainer">
+      <div className="cvClemenceContainer">
       {console.log(this.state.user)}
         {/* <img src={user.photo} alt="profil"/> */}
 

@@ -29,7 +29,7 @@ export default class ArvisHugo extends Component {
     return (
       console.log (user),
       <div className="arvisTotal">
-                    <div className="cvContainer">
+                    <div className="cvContainerHugo">
 
 
                                   <h1 className="arvisName departGauche arvisDuration arvisFontName">{`${user.firstname} ${user.lastname}`}</h1>
