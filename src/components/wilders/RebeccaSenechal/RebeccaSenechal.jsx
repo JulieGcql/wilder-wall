@@ -37,15 +37,17 @@ export default class RebeccaSenechal extends Component {
       <div>
 
         <div className="cvRebeccaContainer" >
-          <div className="monMatricule" id="top">          
+          <div className="monMatricule" id="top"> 
+            
+            <span className="infosdetail"> <img className="cvpicture" src={user.photo}  alt="visage" /></span>
             <p className="nom">{`${user.firstname} ${user.lastname}`}</p>
-            <p>{user.email}</p>
-            <p>{user.phone}</p>
+            <p className="infosdetail">{user.email}</p>
+            <p className="infosdetail">{user.phone}</p>
             <a className="lienCv" href={user.cv}> Téléchargez mon CV </a>
             <span className="icones">
                 <a href={user.github} target="_blank" rel="noopener noreferrer"><i class="large github basic icon"></i></a>
                 <a href={user.linkedin} target="_blank" rel="noopener noreferrer"><i class="large linkedin basic icon"></i></a>
-            </span>
+            </span>   
           </div>
 
           <div dangerouslySetInnerHTML={createMarkup(user.bio)} className="cvbio"></div>
@@ -64,5 +66,4 @@ function createMarkup(stringyfiedHtml) {
   return { __html: stringyfiedHtml };
 }
 
-// <div className="cvpicture"><img src={user.photo}  alt="visage" /></div>
 
