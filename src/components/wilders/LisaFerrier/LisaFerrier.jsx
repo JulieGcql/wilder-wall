@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import './LisaFerrier.scss';
 import Spinner from '../../Spinner';
-import Contact from './contact/Contact';
-import NavBar from './navbar/NavBar';
-import Apropos from './apropos/Apropos';
-import { Container, UncontrolledCarousel} from 'reactstrap';
+import { Container } from 'reactstrap';
+import LS_navbar from './LS_navbar/LS_navbar'
+import LS_home from './LS_home/LS_home'
+import LS_projets from './LS_projets/LS_projets';
+import LS_apropos from './LS_apropos/LS_apropos'
+import LS_photos from './LS_photos/LS_photos'
+import { Route, BrowserRouter, Switch } from 'react-router-dom';
 const BASE_URL = "https://peaceful-cliffs-33252.herokuapp.com/api/v1/wilders"
 const USERNAME = "lisa-ferrier"
 
@@ -42,48 +45,24 @@ export default class LisaFerrier extends Component {
             return <div className="container spinnerContainer"><Spinner /></div>
         }
         return (
-         <Container>
-            <header>
-                <h1 className="titleLisa">{`${user.firstname} ${user.lastname}`}</h1> 
-                    <p>cv développeur web junior</p>
-                </header>
 
-            <NavBar />
-              
-            
-            <Apropos />
+            <BrowserRouter>
+                <div className="lsback">
+                    <Container>
+                        <div className="grid-container">
+                            <LS_apropos />
+                            <LS_navbar />
+                        
+                        <Switch>
+                            <Route exact path="/wilders/lisa-ferrier/" component={LS_home} />
+                            <Route exact path="/wilders/lisa-ferrier/projets" component={LS_projets} />
+                            <Route exact path="/wilders/lisa-ferrier/photos" component={LS_photos} />
+                        </Switch>    
 
-            <div className="competences">
-                <h1 id="compétences">compétences</h1>
-                    <p>
-                    Front-end: 
-                    Scrum 
-                    React.js
-                    Git / Github
-                    
-                    JavaScript
-                    HTML5
-                    CSS3
-                    Photographie
-                    Photoscape
-                    Photofiltre
-                    Back-end :
-                    Linux Ubuntu
-                    A trier
-                    </p>
-                    <p>
-                    Langue : anglais</p>
-            </div>
-            <div className="realisations">
-                <h1 id="realisations">réalisations</h1>
-            </div>
-            <div className="interets">
-                <h1 id="interets">intérêts</h1>
-                    <UncontrolledCarousel items={items} />
-            </div>       
-            <Contact />       
-        </Container>
-           
+                    </div>
+                    </Container>
+                </div>
+            </BrowserRouter >
         )
     }
 }

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+.lsmail {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #292f33;
+}
+
+.lsmail:hover {
+    color: #f4bc33;
+    transition: 0.2s;
+}
+
+.lstitre, .lisaferrier{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    display: flex;
+    justify-content: center;
+}
+
+.lstitre {
+    margin: 3vh;
+}
+
+i {
+    color: #292f33;
+}
+
+i:hover {
+    color: #f4bc33;
+    transition: 0.2s;
+}
+
+.lisaferrier {
+    margin: 3vh;
+}
+
+
+.lsblockpropos {
+    background: white;
+    color: #292f33;
+    padding: 2vh;
+    margin-top: 3vh;
+}
+
+.lsenglobetext {
+    margin-left: auto;
+    margin-right: auto;
+    width: 35vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.lsicon {
+text-align: center;
+margin-top: 3vh;
+}
+
+.lstextpropos {
+    display: inline-block;
+    font-size: 1.2em;
+    margin-bottom: 0vh;
+}
+
+.lsmoi {
+    width: 70%;
+    border-radius: 50%;
+    border: 3vh solid #76c2af;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
