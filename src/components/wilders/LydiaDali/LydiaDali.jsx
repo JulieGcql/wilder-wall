@@ -28,7 +28,7 @@ export default class LydiaDali extends Component {
     <div className="cvContainer">
         <header>
         <h2>Devellopeuse Front-End</h2>
-        <img src={user.photo} />
+        <img id="lydiaPhoto" src={user.photo} />
        
         </header>
 
