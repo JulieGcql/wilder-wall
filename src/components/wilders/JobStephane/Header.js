@@ -9,7 +9,7 @@ class Header extends Component {
         return (
            <header>
                 <h1 className="p30">{`Bonjour, je m'appelle ${this.props.firstname}`} </h1>
-                <h4 className="p30">développeur FullStack: Frontend / Backend junior</h4>
+                <h1 className="p30">Développeur FullStack junior: ReactJS , Redux, 🔥 NodeJS (express)</h1>
                 <h4 className="p30"><a href={this.props.linkedin}>Linkedin</a></h4>
                 <h4 className="p30"><a href={this.props.github}>Github</a></h4>
                 <h4 className="p30">07.71.58.27.43</h4>
