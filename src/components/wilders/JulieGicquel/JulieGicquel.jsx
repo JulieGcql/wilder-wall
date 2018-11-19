@@ -48,9 +48,9 @@ export default class JulieGicquel extends Component {
     if (!userFetched) {
       return <div className="container spinnerContainer"><Spinner /></div>
     }
-    const change = this.state.on ? "light" : "Gicquel_Infos";
-    const change1 = this.state.on1 ? "light" : "Gicquel_Wild";
-    const change2 = this.state.on2 ? "light" : "Gicquel_Contact";
+    const change = this.state.on ? "Gicquel_light" : "Gicquel_Infos";
+    const change1 = this.state.on1 ? "Gicquel_light" : "Gicquel_Wild";
+    const change2 = this.state.on2 ? "Gicquel_light" : "Gicquel_Contact";
 
     return (
       <div className="Gicquel_Container">
