@@ -7,14 +7,14 @@ export default class Wilder extends Component {
   render() {
     const { wilder } = this.props;
     return (
-      <Card>
+      <Card className="wilderCard">
         <Link to={`/wilders/${wilder.slug}`}>
         <Image src={wilder.avatar} />
         <Card.Content>
           
         </Card.Content>
         <Card.Content extra>
-          <Card.Header>{wilder.firstname}</Card.Header>
+          <Card.Header className="wildersName">{wilder.firstname}</Card.Header>
         </Card.Content>
         </Link>
       </Card>

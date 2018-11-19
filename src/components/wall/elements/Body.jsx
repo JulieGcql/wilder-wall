@@ -29,7 +29,7 @@ export default class Body extends Component {
     }
     // return wilders if fetched
     return (
-      <div>
+      <div className="wildersContainer">
         <Wilders wilders={this.state.wilders}/>
       </div>
     )
