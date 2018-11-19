@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import './JohnDoe.scss'
 import Spinner from '../../Spinner';
 const BASE_URL = "https://peaceful-cliffs-33252.herokuapp.com/api/v1/wilders"
-const USERNAME = "david-marie"
+const USERNAME = "senechal-rebecca"
+
 
 export default class JohnDoe extends Component {
   constructor(props){
@@ -28,7 +29,7 @@ export default class JohnDoe extends Component {
     }
     return (
       <div className="cvContainer">
-        <img src={user.photo} />
+        <img src={user.photo} alt="visage"/>
         <h1>{`${user.firstname} ${user.lastname}`}</h1>
         <div dangerouslySetInnerHTML={createMarkup(user.bio)}></div>
         <a href={user.cv}>Télécharger mon CV !</a>
