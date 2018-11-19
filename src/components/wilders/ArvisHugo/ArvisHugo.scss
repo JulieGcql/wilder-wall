@@ -1,14 +1,14 @@
 .arvisTotal{
-  size: auto;
+  
 }
 
 
-h1{
+.arvisFontName{
     font-family:"IM Fell DW Pica";
     font-size:80px;
 }
 
-a{
+.arvisFontCV{
     font-family:"IM Fell DW Pica";
     font-size:40px;
     color:black;
@@ -109,7 +109,7 @@ a{
   background-color: aliceblue;
 }
 
-.shake:hover {
+.shakeLogo:hover {
   /* Start the shake animation and make the animation last for 0.5 seconds */
   animation: shake 0.5s;
   /* When the animation is finished, start again */
@@ -131,7 +131,7 @@ a{
 }
   @import url('https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica');
 
-  .d {
+  .arvisDuration {
     animation-duration: 5s;
     animation-name: glissement;
     animation-iteration-count: 5s;
@@ -157,7 +157,7 @@ a{
 
 
 
-  ul li
+  ul.arvisListe li.arvisListe
 {
 position: inherit;
 list-style-type:none;
@@ -203,12 +203,14 @@ font-weight:bold;
 }
 }
 
-body {
+.arvisTotal{
   -webkit-animation: bgcolor 30s infinite;
   animation: bgcolor 30s infinite;
   -webkit-animation-direction: alternate;
   animation-direction: alternate;
 }
+
+  
 
 // logo
 

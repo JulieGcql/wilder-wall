@@ -32,12 +32,11 @@ export default class ArvisHugo extends Component {
                     <div className="cvContainer">
 
 
-                                <div >
-                                  <h1 className="arvisName departGauche d">{`${user.firstname} ${user.lastname}`}</h1>
-                                  <img className="arvisImage departGauche d" src={user.photo} alt="imagecv" />
-                                  <a className="arvisCv departGauche d" href={user.cv}target="_blank"rel="noopener noreferrer">Télécharger mon CV !</a>
+                                  <h1 className="arvisName departGauche arvisDuration arvisFontName">{`${user.firstname} ${user.lastname}`}</h1>
+                                  <img className="arvisImage departGauche arvisDuration" src={user.photo} alt="imagecv" />
+                                  <a className="arvisCv departGauche arvisDuration arvisFontCV" href={user.cv}target="_blank"rel="noopener noreferrer">Télécharger mon CV !</a>
                                 </div>
-                    </div>
+                    
 
                     <div>
 
@@ -48,10 +47,10 @@ export default class ArvisHugo extends Component {
 
                   
                                 <div className="arvisLink">
-                                <ul className="whiteBck">
-                                  <li className="shake"><a href={user.linkedin} target="_blank"rel="noopener noreferrer"><img className="arvisLogo" src="https://mbtskoudsalg.com/images/linkedin-logo-png-transparent-6.png" alt="logo linkedin"/></a></li>
-                                  <li className="shake"><a href={user.github} target="_blank"rel="noopener noreferrer"><img className="arvisLogo" src="https://www.pofilo.fr/img/SPOF-github/github1600.png" alt="logo github"/></a></li>
-                                  <li className="shake"><img className="arvisLogo" src="https://banner2.kisspng.com/20180422/ouw/kisspng-computer-icons-telephone-call-telephone-symbol-5adc94af106c81.7479463115244054230673.jpg" alt="logo telephone"/>{user.phone}</li>
+                                <ul className="whiteBck arvisListe">
+                                  <li className="shakeLogo arvisListe"><a href={user.linkedin} target="_blank"rel="noopener noreferrer"><img className="arvisLogo" src="https://mbtskoudsalg.com/images/linkedin-logo-png-transparent-6.png" alt="logo linkedin"/></a></li>
+                                  <li className="shakeLogo arvisListe"><a href={user.github} target="_blank"rel="noopener noreferrer"><img className="arvisLogo" src="https://www.pofilo.fr/img/SPOF-github/github1600.png" alt="logo github"/></a></li>
+                                  <li className="shakeLogo arvisListe"><img className="arvisLogo" src="https://banner2.kisspng.com/20180422/ouw/kisspng-computer-icons-telephone-call-telephone-symbol-5adc94af106c81.7479463115244054230673.jpg" alt="logo telephone"/>{user.phone}</li>
                                 </ul>
                     </div>
                     
