@@ -49,17 +49,13 @@ export default class LisaFerrier extends Component {
             <BrowserRouter>
                 <div className="lsback">
                     <Container>
-                        <div className="grid-container">
                             <LS_apropos />
                             <LS_navbar />
-                        
                         <Switch>
                             <Route exact path="/wilders/lisa-ferrier/" component={LS_home} />
                             <Route exact path="/wilders/lisa-ferrier/projets" component={LS_projets} />
                             <Route exact path="/wilders/lisa-ferrier/photos" component={LS_photos} />
-                        </Switch>    
-
-                    </div>
+                        </Switch>
                     </Container>
                 </div>
             </BrowserRouter >
@@ -70,3 +66,4 @@ export default class LisaFerrier extends Component {
 function createMarkup(stringyfiedHtml) {
     return { __html: stringyfiedHtml };
 }
+

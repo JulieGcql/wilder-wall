@@ -30,10 +30,10 @@ export default class LS_apropos extends Component {
                                 <br />
                             </div>
                             <div className="lsicon">
-                                <a href="https://www.linkedin.com/in/ferrierlisa/">
-                                    <i class="huge linkedin icon" />
+                                <a className="lsiconebas" href="https://www.linkedin.com/in/ferrierlisa/">
+                                    <i  class="huge linkedin icon" />
                                 </a>
-                                <a href="https://github.com/lisaferrier">
+                                <a className="lsiconebas" href="https://github.com/lisaferrier">
                                     <i class="huge github square icon" />
                                 </a>
                             </div>

@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 
 .lsmail {
     text-decoration: none;
     font-size: 1.2em;
     color: #292f33;
+
+    font-family: 'Open Sans', sans-serif;
 }
 
 .lsmail:hover {
@@ -25,12 +28,12 @@
     margin: 3vh;
 }
 
-i {
-    color: #292f33;
+i.huge.linkedin.icon, i.huge.github.square.icon {
+    color:  #f4bc33;
 }
 
-i:hover {
-    color: #f4bc33;
+i.huge.linkedin.icon:hover, i.huge.github.square.icon:hover {
+    color: #76c2af;
     transition: 0.2s;
 }
 
@@ -50,7 +53,6 @@ i:hover {
     margin-left: auto;
     margin-right: auto;
     width: 35vh;
-    font-family: 'Roboto', sans-serif;
 }
 
 .lsicon {
@@ -62,6 +64,7 @@ margin-top: 3vh;
     display: inline-block;
     font-size: 1.2em;
     margin-bottom: 0vh;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .lsmoi {
@@ -72,3 +75,5 @@ margin-top: 3vh;
     margin-right: auto;
     display: flex;
 }
+
+/*76c2af*/

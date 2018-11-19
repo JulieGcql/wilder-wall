@@ -3,7 +3,6 @@
 
 .lsnavbar {
     background: white;
-    font-size: 1.6em;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
 }
@@ -25,7 +24,7 @@ ul {
     margin-right: 5vh;
     margin-left: 5vh;
     padding: 2vh;
-    font-size: 1.2em;
+    font-size: 1.6em;
     color: #292f33;
 }
 
