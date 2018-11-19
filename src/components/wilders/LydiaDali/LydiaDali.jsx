@@ -25,24 +25,24 @@ export default class LydiaDali extends Component {
     }
     return (
 
-    <div className="cvLydiaContainer">
-        <header>
-        <h2>Devellopeuse Front-End</h2>
-        <img id="lydiaPhoto" src={user.photo} />
+    <div className="cvContainer-lydia">
+        <header className="header-lydia">
+        <h2 className="title-lydia">Developpeuse Front-End</h2>
+        <img className="image-lydia" src={user.photo} />
        
         </header>
 
-        <div className="myContain">
-          <h1>{`${user.firstname} ${user.lastname}`}</h1>
-          <div className="linkTitle" dangerouslySetInnerHTML={createMarkup(user.bio)}></div>
+        <div className="myContain-lydia">
+          <h1 className="bigtitle-lydia">{`${user.firstname} ${user.lastname}`}</h1>
+          <div className="linkTitle-lydia" dangerouslySetInnerHTML={createMarkup(user.bio)}></div>
                    
         </div>
 
-        <footer className="site-footer">
+        <footer className="site-footer-lydia">
           
-                <div className="copyright">
-                  <a href={user.cv}>Télécharger mon CV !</a> 
-                  <p className="telecharger">&copy; 2018 Lydia Dali | Wild Code School</p>
+                <div className="copyright-lydia">
+                  <a className="a-lydia" href={user.cv}>Télécharger mon CV !</a> 
+                  <p className="telecharger-lydia">&copy; 2018 Lydia Dali | Wild Code School</p>
                 </div>
         </footer>
 
