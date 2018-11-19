@@ -23,7 +23,7 @@ img {
 }
 
 /* HEADER */
-header {
+.header_wild{
     width: 100%;
     height: auto;
     background: linear-gradient(-225deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.1) 200%),url("http://www.stephanejob.com/Img/Header.jpg")center fixed;
@@ -174,3 +174,4 @@ header {
     display: none;
     transition: 3s ease-in-out;
 }
+
