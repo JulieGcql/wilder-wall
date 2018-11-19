@@ -1,47 +1,67 @@
 import React from 'react';
-import background from '../../cubes.jpg'
+import background from '../../paisaje.jpg'
 import cine from '../../cineasta.png'
 import wildo from '../../wildoCoda.png'
+import fume from '../../poisson.png'
+import logo from '../../logoWild.png'
+
 import './BodyAA.css'
 
 
 const BodyAA = ({ firstname, lastname, photo, monCv, bio, wild }) => {
 
   return (
-    <div className="containerBody" style={{ backgroundImage: `url(${background})` }}>
+    <div className="containerBodyAlex" style={{ backgroundImage: `url(${background})` }}>
 
       <div className="titleAlexandra">
-        <h1>{firstname} {lastname}</h1>
-        <p className="subtitle">Développeuse Web Junior React / Node JS</p>
+        <h1 className="myTitleAlex">{firstname} {lastname}</h1>
+        <p className="subtitleAlex">Développeuse Web Junior React / Node JS</p>
       </div>
 
-      <img className="myPhoto" alt="myPhoto" src={photo} />
+      <img className="myPhotoAlex" alt="myPhoto" src={photo} />
 
-      <div className="mesOutils">
-        <p className="titleOutils">Mes Outils</p>
-        <i class="fab fa-react"><br/>React</i>
-        <i class="fab fa-node-js"><br/>Node JS</i>
-        <i class="fab fa-js"><br/>Javascript</i>
-        <i class="fab fa-github"><br/>GitFlow</i>
-        <i class="fab fa-linux"><br/>Ubuntu/unix/Linux</i>
+      <div className="mesOutilsAlex">
+        <p className="titleOutilsAlex"><span>Mes Outils et compétences</span></p>
+        <i className="fab fa-react OutilsAlex"><span className="textOutilsAlex"><br />React</span></i>
+        <i className="fab fa-node-js OutilsAlex"><span className="textOutilsAlex"><br />Node JS</span></i>
+        <i className="fab fa-js OutilsAlex"><span className="textOutilsAlex"><br />Javascript</span></i>
+        <i className="fab fa-github OutilsAlex"><span className="textOutilsAlex"><br />GitFlow</span></i>
+        <i className="fab fa-linux OutilsAlex"><span className="textOutilsAlex"><br />Ubuntu/unix/Linux</span></i>
       </div>
 
-      <div className="monParcours" dangerouslySetInnerHTML={createMarkup(bio)}>
+      <div className="monParcoursAlex" >
+        <p className="monParcoursTitleAlex">Un peu de moi et mon parcours</p>
+        <p className="monParcoursTextAlex" dangerouslySetInnerHTML={createMarkup(bio)}></p>
       </div>
 
-      <div className="monCoteWild" dangerouslySetInnerHTML={createMarkup(wild)}>
+      <div className="monCoteWildAlex" >
+        <p className="monCoteTitleAlex">Mon côté WILD</p>
+        <p className="monCoteTextAlex" dangerouslySetInnerHTML={createMarkup(wild)}></p>
+        <img className="myLogoAlex" alt="myWild" src={logo} />
       </div>
 
-      <div className="Projets">
-        <img className="cine" alt="cine" src={cine} />
-        <img className="wildo" alt="wildo" src={wildo} />
-        <div className="project3">
-          <i class="fas fa-wrench"></i>
-          <p>Prochainement Application Web "LE POULPE QUI FUME"</p>
+      <div className="ProjetsAlex">
+        <div>
+          <img className="cineAlex" alt="cine" src={cine} />
+          <p className="projDescription">J'ai participé au développement  du site web responsive des sorties cinéma,
+            Utilisation  API  The movie Data base ,  Affichage de données </p>
+          <a className="linksAlex" href="https://guarded-atoll-35875.herokuapp.com ">CINEASTA</a>
+        </div>
+
+        <div>
+          <img className="wildoAlex" alt="wildo" src={wildo} />
+          <p className="projDescription">J'ai fait partie du développement d'un application Web pour les touristes <br />
+            que visitent le quartier du Panier </p>
+        </div>
+
+        <div>
+          <img className="fumeAlex" alt="fume" src={fume} />
+          <p className="projDescription">J'ai fait partie du développement de l'application Web  Le poulpe qui fume, <br />
+            Utilisation du Base de donnés, site Web  persistant  et dynamique </p>
 
         </div>
       </div>
-      <a href={monCv} className="cvAA">Telechargez mon CV</a>
+      <a className="linksAlex" href={monCv} >Telechargez mon CV</a>
     </div>
 
 
