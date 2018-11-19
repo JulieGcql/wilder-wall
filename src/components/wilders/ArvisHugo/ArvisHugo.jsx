@@ -29,7 +29,7 @@ export default class ArvisHugo extends Component {
     return (
       console.log (user),
       <div className="arvisTotal">
-                    <div className="cvContainerHugo">
+                    <div className="cvContainerArvis">
 
 
                                   <h1 className="arvisName departGauche arvisDuration arvisFontName">{`${user.firstname} ${user.lastname}`}</h1>
@@ -47,7 +47,7 @@ export default class ArvisHugo extends Component {
 
                   
                                 <div className="arvisLink">
-                                <ul className="whiteBck arvisListe">
+                                <ul className="whiteBckArvis arvisListe">
                                   <li className="shakeLogo arvisListe"><a href={user.linkedin} target="_blank"rel="noopener noreferrer"><img className="arvisLogo" src="https://mbtskoudsalg.com/images/linkedin-logo-png-transparent-6.png" alt="logo linkedin"/></a></li>
                                   <li className="shakeLogo arvisListe"><a href={user.github} target="_blank"rel="noopener noreferrer"><img className="arvisLogo" src="https://www.pofilo.fr/img/SPOF-github/github1600.png" alt="logo github"/></a></li>
                                   <li className="shakeLogo arvisListe"><img className="arvisLogo" src="https://banner2.kisspng.com/20180422/ouw/kisspng-computer-icons-telephone-call-telephone-symbol-5adc94af106c81.7479463115244054230673.jpg" alt="logo telephone"/>{user.phone}</li>
