@@ -1,8 +1,8 @@
-.cvContainer{
+.cvContainer-lydia{
     text-align: center;
     background-color: #000000d1;
   }
-header{
+.header-lydia{
     background-image: url(http://www.pigeontech.co.uk/images/background1.jpeg);
     width: auto;
     height: 470px;
@@ -12,7 +12,7 @@ header{
     padding-left: 30px;
     padding-right: 30px;
 }
-img{
+.image-lydia{
     width: 220px;    
     border-radius: 109px;
     border: solid 3px #f5f5f5;
@@ -20,7 +20,7 @@ img{
     margin-bottom: 25px;
     float: left;
 }
-.h1, h1 {
+.bigtitle-lydia {
     font-size: 2.5rem;
     margin-top: 45px;    
     color: #af8c23;
@@ -31,41 +31,42 @@ img{
     margin-right: auto;
 
 }
-.h2, h2 {
+.title-lydia {
     font-size: 3rem;
     color: #ffffff;
     padding-top: 110px;
     
 }
-.linkTitle{
+.linkTitle-lydia{
     color: #fff;
-    font-size: 20px;
+    font-size: 27px;
     width: 84%;
     margin-left: auto;
     margin-right: auto;
     margin-top: -24px;
 }
-.linkTitle p u {
+.linkTitle-lydia p u {
     font-size: 30px;
 }
-a{
+.a-lydia{
     color:  #af8c23;
 }
-a:hover{
+.a-lydia:hover{
     color: #00ffb8;
     text-decoration: none;
 }
-.site-footer{
+.site-footer-lydia{
     padding: 40px 0 2px;
     background-color: #131619;
     border-top: 1px solid #212427;
 }
-.copyright{
+.copyright-lydia{
     color: white;
     width: 100%;
     text-align: center;
+    font-size: 23px;
 }
-.telecharger{
+.telecharger-lydia{
     margin-top: 30px
 }
 
