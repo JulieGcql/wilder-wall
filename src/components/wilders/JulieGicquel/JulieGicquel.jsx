@@ -48,17 +48,17 @@ export default class JulieGicquel extends Component {
     if (!userFetched) {
       return <div className="container spinnerContainer"><Spinner /></div>
     }
-    const change = this.state.on ? "light" : "Gicquel_Infos";
-    const change1 = this.state.on1 ? "light" : "Gicquel_Wild";
-    const change2 = this.state.on2 ? "light" : "Gicquel_Contact";
+    const change = this.state.on ? "Gicquel_light" : "Gicquel_Infos";
+    const change1 = this.state.on1 ? "Gicquel_light" : "Gicquel_Wild";
+    const change2 = this.state.on2 ? "Gicquel_light" : "Gicquel_Contact";
 
     return (
       <div className="Gicquel_Container">
         <div className="Gicquel_Header">
           <img src={user.photo} className="Gicquel_Photo" alt="Julie Gicquel"/>
           <div className="Gicquel_Titre">
-            <h2>{`${user.firstname} ${user.lastname}`}</h2>
-            <h3>Développeuse web junior fullstack React.js/Node.js</h3>
+            <h2 className="Gicquel_Titre">{`${user.firstname} ${user.lastname}`}</h2>
+            <h3 className="Gicquel_Titre">Développeuse web junior fullstack React.js/Node.js</h3>
           </div>
         </div>
         <div className="Gicquel_Sections">
