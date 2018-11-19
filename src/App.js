@@ -20,7 +20,7 @@ class App extends Component {
 
       
       <Switch>
-        <Route exact path="/wilders/teams" component={Wall} />
+        <Route exact path="/wilders/team" component={Wall} />
         <Route exact path="/wilders/john-doe" component={JohnDoe} />
         <Route exact path="/wilders/rebecca-senechal" component={RebeccaSenechal} />
         <Route exact path="/wilders/christelle-chatroux" component={ChristelleChatroux} />
