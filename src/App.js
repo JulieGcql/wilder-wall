@@ -11,6 +11,7 @@ import JulieLucanik from './components/wilders/JulieLucanik/JulieLucanik';
 import JulieGicquel from './components/wilders/JulieGicquel/JulieGicquel';
 import Marechal from './components/wilders/Marechal/Marechal';
 import JulienBertocchini from './components/wilders/JulienBertocchini/JulienBertocchini';
+import TranzerMathias from './components/wilders/TranzerMathias/TranzerMathias';
 class App extends Component {
   render() {
     return (
@@ -25,6 +26,7 @@ class App extends Component {
         <Route exact path="/wilders/julie-gicquel" component={JulieGicquel} />
         <Route exact path="/wilders/clemence-marechal" component={Marechal} />
         <Route exact path="/wilders/julien-bertocchini" component={JulienBertocchini} />
+        <Route exact path="/wilders/Mathias-Tranzer" component={TranzerMathias} />
         <Route path="/" component={NotFound} />
       </Switch>
     );

@@ -1,0 +1,71 @@
+.cvContainer
+{
+background-color: darkgray;
+height: 600px;
+width: 80%;
+padding: 10px;
+margin-right: 5%;
+margin-left: 10%;
+margin-bottom: 5%;
+box-shadow: 5px 5px 8px grey;
+
+
+}
+
+
+.bio
+{
+    text-align: left;
+
+
+}
+
+.wild
+{
+    text-align: justify;
+    padding-bottom: 1%;
+
+}
+
+.cv{
+
+    width: 15px;
+    border-radius: 3px;
+    background-color: grey;
+    font-size: 9px
+    
+    
+
+}
+
+
+
+.nom{
+
+font-weight: bold;
+font-size: 1em;
+}
+
+.titre{
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.job{
+    margin-top: -3px;
+    font-size: 0.8em;
+    color:gray;
+}
+
+.boutons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    
+} 
+
+
+.reserve{
+    padding-top: 10%;
+}
