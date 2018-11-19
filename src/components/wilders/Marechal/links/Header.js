@@ -17,8 +17,8 @@ return(
                 <br />
                 <h3>React et NodeJs</h3>
             </div>
-        </div>
         <a href={this.props.cv} target="blank">Télécharger mon CV !</a>
+        </div>
         <section className="bio">
         <div dangerouslySetInnerHTML={createMarkup(this.props.bio)}></div>
         </section>

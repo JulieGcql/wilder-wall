@@ -6,7 +6,7 @@
     h1{
         font-family: 'KoHo', sans-serif;
         color: #06BC9B;
-        font-size: 2em;
+        font-size: 2.5em;
         border: none;
         margin: 0px auto;
     }
@@ -21,6 +21,7 @@
                 border: 4px double white;
                 border-radius: 50px;
                 box-shadow: 12px 12px 12px 1px rgba(59, 59, 63, 0.746);
+                width: 45%;
 
             }
 
@@ -30,6 +31,7 @@
 
                 h2, h3 {
                     font-family: KoHo, sans-serif;
+                    font-size: 2.3em;
                 }
             }
         }
@@ -38,8 +40,10 @@
                     border-radius: 10px;
                     box-shadow: 2px 2px 12px 5px rgba(59, 59, 63, 0.746);
                     margin: auto;
-                    font-size: 1.3em;
+                    font-size: 1.8em;
                     color: #06BC9B;
+                    text-align: center;
+                    padding: 1%;
                 }
     .bio{
         width: 85%;
