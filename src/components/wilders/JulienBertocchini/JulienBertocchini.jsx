@@ -38,7 +38,7 @@ render() {
       <div className="header_bertocchini_container">
         <div className="header_bertocchini_text">
           <h6 className='subtitle_header_bertocchini'>Developeur Junior Fullstack React| Node JS</h6>
-          <h2 className='title_header_bertocchini'>Nouvelle <br/>arrivage</h2>
+          <h2 className='title_header_bertocchini'>Nouvel <br/>arrivage</h2>
         </div>
       </div>
     
