@@ -28,11 +28,11 @@
     margin: 3vh;
 }
 
-i.huge.linkedin.icon, i.huge.github.square.icon {
+i.big.linkedin.icon, i.big.github.square.icon {
     color:  #f4bc33;
 }
 
-i.huge.linkedin.icon:hover, i.huge.github.square.icon:hover {
+i.big.linkedin.icon:hover, i.big.github.square.icon:hover {
     color: #76c2af;
     transition: 0.2s;
 }

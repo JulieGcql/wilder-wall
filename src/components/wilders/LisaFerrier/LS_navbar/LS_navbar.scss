@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 .lsnavbar {
+    margin: 3vh 0vh;
+    width: 100%;
     background: white;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
@@ -9,31 +11,32 @@
 
 ul {
     list-style: none;
-    margin-top: 3vh;
     padding-top: 2vh;
-    padding-bottom: 2vh;
+    padding-bottom: 1vh;
     margin-left: 0;
     padding-left: 0;
-    justify-content: center;
+    justify-content: space-between;
     display: flex;
-    
+    flex-wrap: wrap;
+    text-align: center;   
 }
 
 .lsli {
-    display: inline-block;
-    margin-right: 5vh;
-    margin-left: 5vh;
+    width: 100px;
     padding: 2vh;
     font-size: 1.6em;
-    color: #292f33;
+    a {
+      color: #292f33;
+    }
 }
 
 .cvLisa{
-
-    color: #292f33;
+  color: #292f33;
 }
 
 .lsli:hover, .cvLisa:hover {
-    color: #f4bc33;
-    transition: 0.2s;
+    a {
+      color: #f4bc33 !important;
+      transition: 0.2s;
+    }
 }

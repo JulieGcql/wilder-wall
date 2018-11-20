@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './LisaFerrier.scss';
 import Spinner from '../../Spinner';
-import { Container } from 'reactstrap';
+import { Container, Col, Row } from 'reactstrap';
 import LS_navbar from './LS_navbar/LS_navbar'
 import LS_home from './LS_home/LS_home'
 import LS_projets from './LS_projets/LS_projets';
@@ -49,13 +49,23 @@ export default class LisaFerrier extends Component {
             <BrowserRouter>
                 <div className="lsback">
                     <Container>
-                            <LS_apropos />
-                            <LS_navbar />
-                        <Switch>
-                            <Route exact path="/wilders/lisa-ferrier/" component={LS_home} />
-                            <Route exact path="/wilders/lisa-ferrier/projets" component={LS_projets} />
-                            <Route exact path="/wilders/lisa-ferrier/photos" component={LS_photos} />
-                        </Switch>
+                        <Row>
+                            <Col sm="4">
+                                <LS_apropos />
+                            </Col>
+                            <Col sm="8">
+                                <Row>
+                                    <LS_navbar />
+                                </Row>
+                                <Row>
+                                    <Switch>
+                                        <Route exact path="/wilders/lisa-ferrier/" component={LS_home} />
+                                        <Route exact path="/wilders/lisa-ferrier/projets" component={LS_projets} />
+                                        <Route exact path="/wilders/lisa-ferrier/photos" component={LS_photos} />
+                                    </Switch>
+                                </Row>
+                            </Col>
+                        </Row>
                     </Container>
                 </div>
             </BrowserRouter >
