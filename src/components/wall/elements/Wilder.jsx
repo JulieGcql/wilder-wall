@@ -8,7 +8,7 @@ export default class Wilder extends Component {
     const { wilder } = this.props;
     return (
       <Card className="wilderCard">
-        <Link to={`/wilders/${wilder.slug}`}>
+        <Link to={`/wilders/${wilder.slug}`} target="_blank">
         <Image src={wilder.avatar} />
         <Card.Content>
           
