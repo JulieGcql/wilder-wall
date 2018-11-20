@@ -77,7 +77,7 @@ render() {
 
     <div className='footer_bertocchini_container'>
       <div className='footer_text_bertocchini'>
-      Retrouver moi sur :
+      Retrouvez moi sur :
       </div>
       <div className='reseau_icon_bertocchini'>
         <a href='mailto:{user.email}'target='_blank'><img className='mail_bertocchini' src={mail} /></a>
