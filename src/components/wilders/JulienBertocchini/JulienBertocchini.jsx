@@ -32,13 +32,13 @@ render() {
   return (
 
     <div>
-      <div className='logo'>
-      <h2 className='logoh2'>Je suis <span className="logospan">Julien</span></h2>
+      <div className='logo_bertocchini'>
+      <h2 className='logoh2_bertocchini'>Je suis <span className="logospan_bertocchini">Julien</span></h2>
       </div>
       <div className="header_bertocchini_container">
         <div className="header_bertocchini_text">
-          <h6 className='subtitle_header'>Developeur Junior Fullstack React| Node JS</h6>
-          <h2 className='title_header'>Nouvelle <br/>arrivage</h2>
+          <h6 className='subtitle_header_bertocchini'>Developeur Junior Fullstack React| Node JS</h6>
+          <h2 className='title_header_bertocchini'>Nouvelle <br/>arrivage</h2>
         </div>
       </div>
     
