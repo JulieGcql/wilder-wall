@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Montserrat|Pacifico');
+
+.spinnerContainer {
+  margin-top: 45vh;
+  text-align: center;
+}
+
+.monMatricule{
+  width: 120vh;
+  margin: 5vh auto 0vh auto;
+  padding: 2vh; 
+  background-color: rgb(245, 245, 218);
+  box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+  
+  .nom {
+  font-family: 'Lobster', cursive;
+  margin-top: -0.5vh;
+  font-size: 2em;
+  }
+
+  a {
+    color:black;    
+  } 
+  
+  a:hover {
+    color:#DFCA64;;  
+  }
+  
+  p {
+    margin-top: -2.5vh;
+  }  
+  
+  .icones {
+    margin-left: 25%;
+   
+  }
+
+  a.lienCv {
+    margin-left: 32%;
+    font-weight: bold;
+  }
+}
+
+.cvRebeccaContainer {
+  background-image: url("./fond-klimt.jpg");
+  margin-top: -10vh;
+  box-shadow: 0px 5px 5px 3px rgba(0, 0, 0, 0.55);
+  padding:10vh;
+  z-index: 0;
+  color:black;
+ 
+}
+
+.cvbio {
+  width: 120vh;
+ margin: 5vh auto 0vh auto;
+ padding: 6vh; 
+ background-color: rgb(245, 245, 218);
+ box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+ font-size: 1em;
+ text-align: justify;
+}
+
+.cvwild {
+  width: 120vh;
+  margin: 5vh auto 0vh auto;
+  padding: 6vh; 
+  background-color: rgb(245, 245, 218);
+  box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+  font-size: 1em;
+  text-align: justify;
+  a {
+    color:black;  
+  } 
+  a:hover {
+    color:#DFCA64;
+  }
+}
+
+.cvpicture {
+margin: -2% 0 -2% 45%;
+display:flex;
+width:12%;
+
+ 
+}
+
+i {
+  visibility: visible;
+}
+
+i.huge {
+  visibility: hidden;
+  padding: 6vh 0 0 0;
+}
+
+// Tablettes
+
+@media (max-width:800px) {
+  .monMatricule {
+    width: 100%;
+    padding: 6%; 
+    .icones {
+      margin-left: 0%;
+    }
+    a.lienCv {
+      margin-right: 10%;
+      margin-left: 20%;
+    }
+    p {
+      margin: 0.1vh;
+    }
+  }
+  .cvwild {
+    width: 100%;
+    padding: 6%; 
+    font-size: 0.9em;
+  }
+  .cvbio{
+    width: 100%;
+    padding: 6%;
+    font-size: 0.9em;
+  }
+
+  a {
+    color:black;
+  }
+  a:hover {
+    color:rgb(114, 114, 114);
+  }
+  i.huge {
+  visibility: visible;
+  padding: 6vh 0 0 0;
+  box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+
+}
+.cvpicture {
+  margin: -2% 0 -2% 45%;
+  display:flex;
+  width:12%;
+  
+   
+  }
+}
+
+// Téléphone
+
+@media (max-width:576px) {
+  .monMatricule {
+    width: 100%;
+    padding: 6%; 
+    .icones {
+      margin-left: 0%;
+    }
+    a.lienCv {
+      margin-right: 10%;
+      margin-left: 20%;
+    }
+    p {
+      margin: 0vh;
+    }
+  }
+  .cvwild {
+    width: 100%;
+    padding: 6%; 
+    font-size: 0.9em;
+  }
+  .cvbio{
+    width: 100%;
+    padding: 6%;
+    font-size: 0.9em;
+  }
+
+  a {
+    color:black;
+  }
+  a:hover {
+    color:rgb(114, 114, 114);
+  }
+  i.huge {
+  visibility: visible;
+  padding: 6vh 0 0 0;
+  box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+
+}
+
+
+.cvpicture {
+  margin: -10% 0 -10% 25%;
+  display:flex;
+
+
+width:45%;
+ 
+}
+
+}

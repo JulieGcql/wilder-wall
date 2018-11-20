@@ -1,0 +1,101 @@
+.container-qualitiesJL {
+    /* background-color: #222; */
+}
+
+.ListJL {
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    grid-column-gap: 10px;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    text-align: center;
+    padding: 50px 5px;
+}
+
+.ListJL .li-jl {
+    width: 250px;
+    padding: 40px;
+    list-style: none;
+    font-size: 1.4em;
+    background-color: #fff;
+    color: #222;
+    box-shadow: 4px 4px 2px rgb(151, 151, 151);
+}
+
+.ListJL .li-jl:first-child, .ListJL .li-jl:nth-child(3) {
+    background: #222;
+    color: #fff;
+}
+
+.ListJL .fas {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+    
+}
+
+.ListJL .fa-code{
+    color: #ef4337;
+}
+
+.ListJL .fa-users{
+    color: #1F212C;
+}
+
+.ListJL .fa-lightbulb{
+    color: #ffaf21;
+}
+
+.ListJL .fa-desktop{
+    color: #1F212C;
+}
+
+@media (max-width: 1460px) and (min-width: 1045px){
+    .ListJL {
+        
+        grid-template-columns: repeat(4, 25%);
+        grid-column-gap: 5px;
+    }
+}
+
+@media (max-width: 1044px) and (min-width: 810px){
+    .ListJL {
+        grid-template-columns: repeat(4, 25%);
+        grid-row-gap: 5px;
+        grid-column-gap: 10px;
+;
+    }
+
+    .ListJL .li-jl {
+        width: 200px;
+        padding: 20px;
+        font-size: 1em;
+    }
+
+    .ListJL .fas {
+        font-size: 1.8em;
+        margin-bottom: 5px;
+        
+    }
+}
+
+@media (max-width: 809px) {
+    .ListJL {
+        grid-template-columns: repeat(2, 50%);
+        grid-row-gap: 10px;
+
+    }
+
+    .ListJL .li-jl {
+        width: 94%;
+        padding: 20px;
+        font-size: 1.2em;
+    }
+
+    .ListJL .fas {
+        font-size: 1.8em;
+        margin-bottom: 5px;
+        
+    }
+}

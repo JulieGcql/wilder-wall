@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|KoHo');
+
+//#525d68  #05a387
+.Skills {
+    font-family: 'Dosis', sans-serif;
+    padding-bottom: 2%;
+
+    h2{
+        font-family: 'KoHo', sans-serif;
+        padding-bottom: 2%;
+        color: #06BC9B;
+
+    }
+
+    .SkillsBox{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10%;
+
+        .Comp{
+            grid-column-start: 1;
+            border: 5px double white;
+            border-radius: 5%;
+            box-shadow: 12px 12px 2px 1px rgba(59, 59, 63, 0.746);
+            justify-self: center;
+            width: 80%;
+
+            ul{
+                list-style-type: none;
+                
+                h3{
+                    font-family: 'KoHo', sans-serif;
+                }
+                li{
+                    font-size: 1.3em;
+                }
+            }
+        }
+        .Tools{
+            grid-column-start: 2;
+            border: 5px double white;
+            border-radius: 5%;
+            box-shadow: 12px 12px 2px 1px rgba(59, 59, 63, 0.746);
+            justify-self: center;
+            width: 80%;
+
+        
+            h2{
+                font-family: 'KoHo', sans-serif;
+            }
+
+            ul{
+                list-style-type: none;
+                
+                h3{
+                    font-family: 'KoHo', sans-serif;
+                }
+                li{
+                    font-size: 1.3em;
+                }
+            }
+        }
+    }
+}
