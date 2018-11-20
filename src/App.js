@@ -15,6 +15,7 @@ import TranzerMathias from './components/wilders/TranzerMathias/TranzerMathias';
 import ArvisHugo from'./components/wilders/ArvisHugo/ArvisHugo';
 import AlexandraAndrade from './components/wilders/AlexandraAndrade/AlexandraAndrade';
 import JobStephane from './components/wilders/JobStephane/JobStephane';
+import LisaFerrier from './components/wilders/LisaFerrier/LisaFerrier'
 
 class App extends Component {
   render() {
@@ -34,6 +35,7 @@ class App extends Component {
         <Route exact path="/wilders/hugo-arvis" component={ArvisHugo} />
         <Route exact path="/wilders/alexandra-andrade" component={AlexandraAndrade}/>
         <Route exact path="/wilders/stephane-job" component={JobStephane}/>
+        <Route exact path="/wilders/lisa-ferrier" component={LisaFerrier} />
         <Route path="/" component={NotFound} />
       </Switch>
     );
