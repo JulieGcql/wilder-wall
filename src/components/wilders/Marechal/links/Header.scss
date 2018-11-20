@@ -9,12 +9,14 @@
         font-size: 2em;
         border: none;
         margin: 0px auto;
+        text-align: center;
     }
         .HeaderBlock{
             display: grid;
             grid-template-columns: 1fr 1fr;
 
             .Pic{
+                width: 50%;
                 grid-column-start: 1;
                 align-self: center;
                 justify-self: center;
