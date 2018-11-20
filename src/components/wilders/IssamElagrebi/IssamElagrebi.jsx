@@ -13,7 +13,7 @@ export default class IssamElagrebi extends Component {
     }
 
   componentDidMount(){
-    const USERNAME = "issam-el agrebi"
+    const USERNAME = "issam-el_agrebi"
     fetch(`https://peaceful-cliffs-33252.herokuapp.com/api/v1/wilders/${USERNAME}`)
     .then((response) => response.json())
     .then((data) => this.setState({user: data.user}))
@@ -29,10 +29,10 @@ export default class IssamElagrebi extends Component {
       
       <div className="cvContainer"> 
         <div className="header-issam">
-        <h1>BIENVENUE SUR MON PROFIL</h1>
+        <h1 id="welcomeIssam">BIENVENUE SUR MON PROFIL</h1>
         <img className="me-issam" src={user.photo} alt="" />
         <h1>{`${user.firstname} ${user.lastname}`}</h1>
-        <h2>Developpeur Junior Full Stack</h2>
+        <h1>Developpeur Junior Full Stack</h1>
         </div>
         <div className="paragraphe-issam">
         <h3>Ma Description</h3>
