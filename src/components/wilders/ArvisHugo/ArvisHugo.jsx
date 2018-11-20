@@ -34,7 +34,7 @@ export default class ArvisHugo extends Component {
 
                                   <h1 className="arvisName departGauche arvisDuration arvisFontName">{`${user.firstname} ${user.lastname}`}</h1>
                                   <img className="arvisImage departGauche arvisDuration" src={user.photo} alt="imagecv" />
-                                  <a className="arvisCv departGauche arvisDuration arvisFontCV" href={user.cv}target="_blank"rel="noopener noreferrer">Télécharger mon CV !</a>
+                                  <a className="arvisCv departGauche arvisDuration arvisFontCV" href={user.cv}target="_blank"rel="noopener noreferrer">Téléchargez mon CV !</a>
                                 </div>
                     
 
