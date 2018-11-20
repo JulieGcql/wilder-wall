@@ -33,7 +33,7 @@ class App extends Component {
         <Route exact path="/wilders/mathias-tranzer" component={TranzerMathias} />
         <Route exact path="/wilders/hugo-arvis" component={ArvisHugo} />
         <Route exact path="/wilders/alexandra-andrade" component={AlexandraAndrade}/>
-        <Route exact path="/wilders/job-stephane" component={JobStephane}/>
+        <Route exact path="/wilders/stephane-job" component={JobStephane}/>
         <Route path="/" component={NotFound} />
       </Switch>
     );
