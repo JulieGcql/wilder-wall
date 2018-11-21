@@ -37,9 +37,9 @@ export default class RebeccaSenechal extends Component {
       <div>
 
         <div className="cvRebeccaContainer" >
+        <header>
           <div className="monMatricule" id="top"> 
-            
-            <span className="infosdetail"> <img className="cvpicture" src={user.photo}  alt="visage" /></span>
+            <span className="infosdetail2"><img className="cvpicture" src={user.photo}  alt="visage" /></span>
             <p className="nom">{`${user.firstname} ${user.lastname}`}</p>
             <p className="infosdetail">{user.email}</p>
             <p className="infosdetail">{user.phone}</p>
@@ -49,10 +49,11 @@ export default class RebeccaSenechal extends Component {
                 <a href={user.linkedin} target="_blank" rel="noopener noreferrer"><i class="large linkedin basic icon"></i></a>
             </span>   
           </div>
-
-          <div dangerouslySetInnerHTML={createMarkup(user.bio)} className="cvbio"></div>
-          <div dangerouslySetInnerHTML={createMarkup(user.wilder_side)} className="cvwild"></div>
-          <a href="#top"><i class="huge arrow circle up icon"></i></a>
+        </header>
+          
+        <div dangerouslySetInnerHTML={createMarkup(user.bio)} className="cvbio"></div>
+        <div dangerouslySetInnerHTML={createMarkup(user.wilder_side)} className="cvwild"></div>
+        <a href="#top"><i class="huge arrow circle up icon"></i></a>
               
         </div>
         
