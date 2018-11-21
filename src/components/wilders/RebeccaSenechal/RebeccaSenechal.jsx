@@ -40,9 +40,11 @@ export default class RebeccaSenechal extends Component {
         <header>
           <div className="monMatricule" id="top"> 
             <span className="infosdetail2"><img className="cvpicture" src={user.photo}  alt="visage" /></span>
-            <p className="nom">{`${user.firstname} ${user.lastname}`}</p>
-            <p className="infosdetail">{user.email}</p>
-            <p className="infosdetail">{user.phone}</p>
+            <div className="infoDetailContenair">
+              <p className="nom">{`${user.firstname} ${user.lastname}`}</p>
+              <p className="infosdetail">{user.email}</p>
+              <p className="infosdetail">{user.phone}</p>
+            </div>
             <a className="lienCv" href={user.cv}> Téléchargez mon CV </a>
             <span className="icones">
                 <a href={user.github} target="_blank" rel="noopener noreferrer"><i class="large github basic icon"></i></a>

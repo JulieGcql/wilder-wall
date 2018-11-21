@@ -22,10 +22,14 @@
   justify-content: space-around;
   }
 
+  .infoDetailContenair {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100px;
+  }
   .infosdetail {
-  display:flex;
-  flex-direction: row;
-  justify-content: space-around;
+    text-align: center;
   }
 
   .infosdetail2 {
