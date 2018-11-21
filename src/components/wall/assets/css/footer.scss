@@ -1,13 +1,21 @@
 .wildersWallFooter{
   position: fixed;
   width: 100vw;
-  height: 50px;
+  height: 150px;
   background-color: black;
   bottom: 0;
+  display: flex;
+  justify-content: space-around;
+
+  p {
+    margin-top: 20px !important;
+    color: white !important;
+  }
+}
+.wilderCopyright {
+  text-align: center;
 }
 
-.wilderCopyright {
-  margin-top: 20px !important;
+.footerAddressContact{
   color: white;
-  text-align: center;
 }
