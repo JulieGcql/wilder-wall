@@ -3,6 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import Wall from "./components/wall"
 import NotFound from "./components/NotFound";
 import JohnDoe from "./components/wilders/JohnDoe/JohnDoe";
+import AloysGrimaldi from './components/wilders/AloysGrimaldi/AloysGrimaldi';
 import RebeccaSenechal from './components/wilders/RebeccaSenechal/RebeccaSenechal.jsx';
 import ChristelleChatroux from "./components/wilders/ChristelleChatroux/ChristelleChatroux";
 import LydiaDali from './components/wilders/LydiaDali/LydiaDali';
@@ -24,6 +25,7 @@ class App extends Component {
       <Switch>
         <Route exact path="/wilders/team" component={Wall} />
         <Route exact path="/wilders/john-doe" component={JohnDoe} />
+        <Route exact path="/wilders/aloys-grimaldi" component={AloysGrimaldi} />
         <Route exact path="/wilders/rebecca-senechal" component={RebeccaSenechal} />
         <Route exact path="/wilders/julie-lucanik" component={JulieLucanik} />
         <Route exact path="/wilders/julie-gicquel" component={JulieGicquel} />
