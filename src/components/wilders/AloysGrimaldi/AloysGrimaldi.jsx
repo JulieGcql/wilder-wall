@@ -56,9 +56,11 @@ export default class AloysGrimaldi extends Component {
         </div> 
         </div>
         <div className="FooterAloys">
-        <a href={user.github} className="Git"><img src="http://image.noelshack.com/fichiers/2018/47/1/1542618901-github.png"  alt="Github" className="Social" /></a>
-        <a href={user.linkedin} className="Link"><img src="http://image.noelshack.com/fichiers/2018/47/1/1542621169-linkedin.png"  alt="Linkedin" className="Social" /></a>
-       <div className="mailAloys"> <p>aloys.grimaldi@gmail.com</p> <br/> <p>0605336348</p>  </div>
+        <div>
+          <a href={user.github} className="Git"><img src="http://image.noelshack.com/fichiers/2018/47/1/1542618901-github.png"  alt="Github" className="Social" /></a>
+          <a href={user.linkedin} className="Link"><img src="http://image.noelshack.com/fichiers/2018/47/1/1542621169-linkedin.png"  alt="Linkedin" className="Social" /></a>
+        </div>
+        <div className="mailAloys"> <p>aloys.grimaldi@gmail.com</p> <br/> <p>0605336348</p>  </div>
         </div>
       </div>
         </div>

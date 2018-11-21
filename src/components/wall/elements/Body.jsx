@@ -19,8 +19,9 @@ export default class Body extends Component {
   }
 
   render() {
+    let {wilders} = this.state;
     // return spinner if wilders are not fetched
-    if(this.state.wilders.length < 1){
+    if(wilders.length < 1){
       return (
         <div className="spinnerContainerWall">
           <Spinner />
@@ -30,8 +31,10 @@ export default class Body extends Component {
     // return wilders if fetched
     return (
       <div className="wildersContainer">
-        <Wilders wilders={this.state.wilders}/>
+        <Wilders wilders={shuffleArray(wilders)}/>
       </div>
     )
   }
 }
+
+const shuffleArray = arr => arr.sort(() => Math.random() - 0.5);
