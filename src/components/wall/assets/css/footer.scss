@@ -1,20 +1,14 @@
 .wildersWallFooter{
   position: fixed;
   width: 100vw;
-  height: 80px;
+  height: 100px;
   background-color: black;
   bottom: 0;
-  display: flex;
-  flex-direction: column;
-}
-.wildersWallFooterInfo{
-  display: flex;
-  justify-content: space-around;
-
   p {
     margin-top: 20px !important;
     color: white !important;
   }
+  text-align: center;
 }
 .wilderCopyright {
   text-align: center;
@@ -23,5 +17,9 @@
 .footerAddressContact{
   color: white;
   text-align: center;
-  margin-right: 110px;
+}
+
+#schoolAdressMapLink{
+  width: 100%;
+  margin-right: 30px;
 }
