@@ -34,7 +34,7 @@
     justify-content: end
 }
 .header_bertocchini_text {
-    align-self: center;
+    align-self: start;
     color: rgb(245, 245, 245);
     margin-left: 10vh;
     
@@ -44,6 +44,7 @@
     font-family: 'Barlow', sans-serif;
     font-size: 2.5vh;
     font-size: 1.5vw;
+    width: 50vw;
 }
 
 .title_header_bertocchini{
@@ -81,7 +82,6 @@
     grid-template-columns: repeat(2,1fr);
     margin: 10vh 0vh; 
     transition:transform 1s ease;
-   
 }
 
 .profil_bertocchini:hover{
@@ -111,9 +111,9 @@
     line-height: 1;
     position: relative;
     display: inline-block;
-    margin: .25em;
     padding: .5em .75em;
     display: flex;
+    margin: 2vh;
     
     color: #fff;
     
@@ -147,6 +147,7 @@
     left: .125em;
     background-color:  rgb(245, 245, 245);
 }
+
 .titleh2_bertocchini{
     
     font-size: 14vh;
@@ -188,6 +189,7 @@
     text-align: center;
     margin: 5vh auto;
     margin-bottom: 10vh;
+   
 
 }
 .CVbutton_bertocchini{
@@ -239,6 +241,134 @@
     align-self: center;
     font-weight: 600;
     font-size: 3.5vh;
+    font-size: 2.5vw;
     font-family: 'Barlow', sans-serif;
     
+}
+
+@media screen and (max-width: 768px) {
+
+
+    // **********Header**********
+    
+    .logoh2_bertocchini{
+        font-size: 4vh;
+        margin-left: 4vh;
+    }
+    
+    .header_bertocchini_container{
+        
+        background-position: 25% 30%;    
+    }
+
+    .subtitle_header_bertocchini{
+        font-size: 2.5vh;
+        font-size: 4vw;
+    }
+    
+    .title_header_bertocchini{
+        font-weight: 600;
+        font-size: 6vh;
+        font-size: 7vw;
+    
+    }
+    .header_bertocchini_text {
+        align-self: start;
+        margin-top: 10vh;
+        margin-left: 10vh;
+        margin-left: 10vw;
+        
+    }
+ // **********Body**********
+
+
+ .profil_bertocchini{
+    width: 100vw; 
+    height: 50vh;
+    background-color: rgb(245, 245, 245);
+    display: grid;
+    margin: 10vh 0vh; 
+    transform:translatex(-100%);
+    grid-template-columns: repeat(2,1fr);
+    transition:transform 1s ease;  
+}
+.profil_bertocchini:hover{
+    transform:translatex(0%);
+    transition:transform 1s ease;
+}
+
+.text_bertocchini{
+    width: 68vw;
+    // position: absolute;
+    margin: auto 16vh;
+    margin:  auto 16vw;
+    font-size: 2.5vh;
+    font-size: 3.5vw;
+    text-align: center;
+    
+}
+
+.title_bertocchini {
+    color: #fff;
+    justify-content: center;
+    height: 100%;  
+    width: 100vw;
+    
+}
+
+.titleh2_bertocchini{
+    
+    font-size: 14vh;
+    font-size: 11vw;
+    font-weight: 900;
+    align-self: center;  
+}
+
+.wildside_bertocchini{
+    width: 100vw; 
+    height: 50vh;
+    background-color: rgb(245, 245, 245);
+    display: grid;
+    margin: 10vh 0vh; 
+    transform:translatex(0%);
+    grid-template-columns: repeat(2,1fr);
+    transition:transform 1s ease; 
+}
+
+.profil_bertocchini:hover{
+    transform:translatex(-100%);
+    transition:transform 1s ease;
+}
+
+.CVbutton_container_bertocchini{
+    // display:flex;
+    // justify-content: center;
+    text-align: center;
+    margin: 0vh auto;
+    margin-bottom: 10vh;
+    margin-bottom: 15vw;
+}
+
+.CVbutton_bertocchini{
+    border-radius: 50%;
+    font-size: 5vw;
+    padding: 4vw;
+   
+}
+
+.reseau_icon_bertocchini {
+    display:flex;
+    justify-content: space-between;
+    transform: scale(0.4);
+     
+
+}
+
+.footer_text_bertocchini {
+    
+    font-size: 3.5vh;
+    font-size: 3.5vw;
+   
+    
+}
 }
