@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import background from './paisaje.jpg'
 import Spinner from '../../Spinner';
 import BodyAA from './componentsAA/bodyAA/BodyAA';
 import FooterAA from './componentsAA/footerAA/FooterAA';
@@ -32,7 +33,7 @@ export default class JohnDoe extends Component {
       return <div className="container spinnerContainer"><Spinner/></div>
     }
     return (
-      <div className="cvContainerAlexa">
+      <div className="cvContainerAlexa"style={{ backgroundImage: `url(${background})`  }}>
         <BodyAA
          firstname={user.firstname}
          lastname={user.lastname} 

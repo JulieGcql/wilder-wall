@@ -5,6 +5,7 @@
     background-color: rgb(29, 44, 56);
     padding: 2.3vw;
     text-align: center;
+    grid-template-columns: 1fr;
     
 }
 .linksAA{
