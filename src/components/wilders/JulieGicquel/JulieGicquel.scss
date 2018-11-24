@@ -193,65 +193,7 @@
   margin-left:50px;
 }
 
-// @media screen and (max-width: 1024px)
-// {
-//     .Gicquel_Container, .Gicquel_Header, .Gicquel_bio, .Gicquel_contactMe {
-//       width:100vw;
-//     }
-
-//     .Gicquel_Header {
-//       background-size: auto;
-//       height:unset;
-//       background-position-y: 488px;
-//     }
-
-//     .Gicquel_Infos, .Gicquel_Wild,.Gicquel_Contact, .Gicquel_CV {
-//       margin-left: unset;
-//       margin-right: unset;
-//     }
-
-//     .Gicquel_Button {
-//       width:11em;
-//     }
-
-//     .Gicquel_Tel {
-//       display:none;
-//     }
-
-//     .Gicquel_infosContainer {
-//       display: grid;
-//       grid-template-columns: repeat(2,1fr);
-//       grid-gap:10px;
-//     }
-
-//     .Gicquel_icons {
-//       display: unset;
-//     }
-// }
-
-
-// @media screen and (max-width: 1024px) {
-//   .Gicquel_Header {
-//     background-size: cover;
-//     background-position-y: 50vw;
-//     height: 85vh;
-//   }
-//   .Gicquel_Titre {
-//     padding-top:10px;
-//   }
-// }
-
-// @media screen and (max-width: 1440px) {
-//   .Gicquel_Header {
-//     background-size: cover;
-//     background-position-y: 31vw;
-//     height: 85vh;
-//   }
-//   .Gicquel_Titre {
-//     padding-top:10px;
-//   }
-// }
-
+// RESPONSIVE //
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   .Gicquel_Header {
