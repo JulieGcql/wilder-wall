@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+
+
+.HeaderAlo {
+  background-image: url("https://media.giphy.com/media/l0NgQ8QnyGq3jH9Zu/source.gif");
+  height: 0vh;
+  padding: 25%;
+  color: rgb(251, 255, 0);
+  background-position: center;
+  box-shadow: 5px 5px 20px black;
+
+}
+
+.Skull{
+  background-image: url("https://serviettenwimmel.wavecdn.net/F/1/PP/g133-2531.jpg");
+  background-position: round;
+}
+
+.subTitleAloys {
+  font-size: 2rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.WildsideAlo {
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+  font-size: 1em;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+  .BioAlo {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-size: 1em;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .NameAlo {
+    color: yellow;
+    margin-top: -10vw;
+    margin-bottom: 5vw;
+    font-size: 2.5em;
+    text-align: center;
+    ;           
+  }
+  .PresentationAlo {
+      color:white;
+      font-size: 1vw;
+  }
+  .CVAlo {
+		cursor: pointer;
+		border-radius: 60px;
+		padding: 5px;
+		width: 300px;
+    color:rgb(0, 255, 234);
+    background-color:rgb(94, 93, 93);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 2%;
+    margin-top: 5%;
+
+
+  }
+  .CVAlo:hover {
+      text-decoration: none;
+      background-color:black;
+      color: yellow;
+  }
+
+  .boxAloys {
+    display: grid;
+    grid-gap: 20px;
+    margin-right: 15%;
+    margin-left: 15%;
+    object-fit: cover;
+    // background-color:#020102;
+    // background-color: rgba(255, 255, 255, 0.5);
+    background-color: #000000ed;
+    box-shadow: 5px 5px 20px black;
+}
+
+.boxtext {
+  display: grid;
+  margin-top : 5%;
+  text-align: justify;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.Qui {
+  text-align: center;
+  font-family: "Pacifico";
+  color: aquamarine;
+}
+
+.Social{
+  width: 80px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  // vertical-align: 5%;
+  align-content: center;
+  }
+
+
+
+
+
+  .Alo {
+    width: 300px;
+    z-index: 1;
+    border-radius: 300px;
+    position: absolute;
+    padding-top: 20px;
+    margin-left: 30px;
+    height: 300px;
+  }
+
+
+
+.Alowild {
+  width: 300px;
+  z-index: 1;
+  border-radius: 300px;
+  position: absolute;
+  padding-top: 20px;
+  margin-left: 30px;
+  height: 300px;
+  visibility: hidden;
+}
+
+.Alo:hover {
+  .Alowild {
+    visibility: visible;
+  }
+    
+}
+
+  .PresentationAlo {
+    margin-top: 2%;
+  }
+
+  .FooterAloys {
+
+    background-color:#020102;
+    margin-top: 2%;
+    
+  }
+
+  .mailAloys {
+    font-size: 20px;
+    padding-left: 35%;
+    justify-content: center;
+    text-align: center;
+    padding-right: 35%;
+    color: yellow;
+  }
+
+  .Fox {
+    justify-content: center;
+    padding-left: 43%;
+    padding-right: 43%;
+    margin-top: 10%;
+  }

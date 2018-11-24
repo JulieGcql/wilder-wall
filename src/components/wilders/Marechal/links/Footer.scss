@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|KoHo');
+
+.Footer{
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.3em;
+    background: radial-gradient(75% 100%,#525d68,#06BC9B);
+    border: 5px double white;
+    
+    h3{
+        font-family: 'KoHo', sans-serif;
+        text-align: center;
+    }
+    ul{
+        list-style: none;
+        li{
+            border: 4px double white;
+            width: 60%;
+            margin: 0 auto 10 auto;
+            margin: 20px auto;
+            border-radius: 35px;
+
+            a{
+                color: #06BC9B;         
+            }
+        }
+    }
+}

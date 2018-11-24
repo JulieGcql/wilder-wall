@@ -1,0 +1,19 @@
+.wilderCard{
+  margin-top: 25px !important;
+  cursor: pointer;
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  a:hover {
+    color: orange !important;
+  }
+}
+
+.wildersName{
+  text-align: center;
+}
+
+.wilderAvatar{
+  border-radius: 50px;
+}

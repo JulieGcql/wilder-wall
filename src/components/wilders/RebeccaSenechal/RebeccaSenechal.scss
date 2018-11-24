@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Montserrat|Pacifico');
+
+.spinnerContainer {
+  margin-top: 45vh;
+  text-align: center;
+}
+
+.monMatricule{
+  width: 120vh;
+  margin: 5vh auto 0vh auto;
+  padding: 2vh; 
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+  
+  .nom {
+  font-family: 'Lobster', cursive;
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+  font-size: 2em;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  }
+
+  .infoDetailContenair {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100px;
+  }
+  .infosdetail {
+    text-align: center;
+  }
+
+  .infosdetail2 {
+    margin-left:44%;
+  }
+
+  a {
+    color:black;    
+  } 
+  
+  a:hover {
+    color:#DFCA64;;  
+  }
+  
+  p {
+    margin-top: -2.5vh;
+  }  
+  
+  .icones {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+   
+  }
+
+  a.lienCv {
+  font-weight: bold;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  }
+
+ 
+}
+
+.cvRebeccaContainer {
+  background-image: url("./fond-klimt.jpg");
+  margin-top: -10vh;
+  box-shadow: 0px 5px 5px 3px rgba(0, 0, 0, 0.55);
+  padding:10vh;
+  z-index: 0;
+  color:black;
+ 
+}
+
+.cvbio {
+  width: 120vh;
+ margin: 5vh auto 0vh auto;
+ padding: 6vh; 
+ background-color: rgb(255, 255, 255);
+ box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+ font-size: 1em;
+ text-align: justify;
+}
+
+.cvwild {
+  width: 120vh;
+  margin: 5vh auto 0vh auto;
+  padding: 6vh; 
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+  font-size: 1em;
+  text-align: justify;
+  a {
+    color:black;  
+  } 
+  a:hover {
+    color:#DFCA64;
+  }
+}
+
+.cvpicture {
+border-radius: 50%;
+width:12%;
+
+}
+
+i {
+  visibility: visible;
+}
+
+i.huge {
+  visibility: hidden;
+  padding: 6vh 0 0 0;
+}
+
+// Tablettes
+
+@media (max-width:800px) {
+  .monMatricule {
+    width: 100%;
+    padding: 6%; 
+    .icones {
+      margin-left: 75%;
+    }
+    a.lienCv {
+      margin-right: 10%;
+     
+    }
+    p {
+      margin: 0.1vh;
+    }
+    .infosdetail2 {
+      margin-left:44%;
+    }
+  }
+  .cvwild {
+    width: 100%;
+    padding: 6%; 
+    font-size: 0.9em;
+  }
+  .cvbio{
+    width: 100%;
+    padding: 6%;
+    font-size: 0.9em;
+  }
+
+  a {
+    color:black;
+  }
+  a:hover {
+    color:rgb(114, 114, 114);
+  }
+  i.huge {
+  visibility: visible;
+  display:flex;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 6vh 0 0 0;
+  box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+
+}
+}
+
+
+// Téléphone
+
+@media (max-width:576px) {
+  .monMatricule {
+    width: 100%;
+    padding: 6%; 
+    .icones {
+      margin-left: -4%;
+    }
+    a.lienCv {
+      margin-right: 10%;
+     
+    }
+    p {
+      margin: 0vh;
+    }
+    .nom {
+      font-size: 1.8em;
+    }
+    .infosdetail2 {
+      margin-left:33%;
+    }
+  }
+  .cvwild {
+    width: 100%;
+    padding: 6%; 
+    font-size: 0.9em;
+  }
+  .cvbio{
+    width: 100%;
+    padding: 6%;
+    font-size: 0.9em;
+  }
+
+  a {
+    color:black;
+  }
+  a:hover {
+    color:rgb(114, 114, 114);
+  }
+  i.huge {
+  visibility: visible;
+  padding: 6vh 0 0 0;
+  box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+
+}
+
+
+.cvpicture {
+  width: 30%;
+
+}
+
+}

@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|KoHo');
+
+.Header {
+    font-family: 'Dosis', sans-serif;
+
+    h1{
+        font-family: 'KoHo', sans-serif;
+        color: #06BC9B;
+        font-size: 2em;
+        border: none;
+        margin: 0px auto;
+        text-align: center;
+    }
+        .HeaderBlock{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .Pic{
+                width: 50%;
+                grid-column-start: 1;
+                align-self: center;
+                justify-self: center;
+                border: 4px double white;
+                border-radius: 50px;
+                box-shadow: 12px 12px 12px 1px rgba(59, 59, 63, 0.746);
+
+            }
+
+            .HeaderContent{
+                grid-column-start: 2;
+                align-self: center;
+
+                h2, h3 {
+                    font-family: KoHo, sans-serif;
+                }
+            }
+        }
+                a{
+                    border: 5px double white;
+                    border-radius: 10px;
+                    box-shadow: 2px 2px 12px 5px rgba(59, 59, 63, 0.746);
+                    margin: auto;
+                    font-size: 1.3em;
+                    color: #06BC9B;
+                }
+    .bio{
+        width: 85%;
+        margin: auto;
+        font-size: 1.3em;
+        padding-bottom: 5%;
+        padding-top: 5%;
+    }
+}

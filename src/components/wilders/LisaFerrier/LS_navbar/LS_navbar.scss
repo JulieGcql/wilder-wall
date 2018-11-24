@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.lsnavbar {
+    margin: 3vh 0vh;
+    width: 100%;
+    background: white;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+    margin-left: 0;
+    padding-left: 0;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;   
+}
+
+.lsli {
+    width: 100px;
+    padding: 2vh;
+    font-size: 1.6em;
+    a {
+      color: #292f33;
+    }
+}
+
+.cvLisa{
+  color: #292f33;
+}
+
+.lsli:hover, .cvLisa:hover {
+    a {
+      color: #f4bc33 !important;
+      transition: 0.2s;
+    }
+}

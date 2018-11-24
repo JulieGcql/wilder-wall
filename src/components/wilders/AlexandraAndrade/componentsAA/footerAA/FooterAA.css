@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Bevan|Knewave|Roboto"  );
+
+
+.containerFootAA{
+    background-color: rgb(29, 44, 56);
+    padding: 2.3vw;
+    text-align: center;
+    
+}
+.linksAA{
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+}
+.contactAA{
+    font-family: 'Bevan', cursive;
+    color: aliceblue;
+    font-size: 1.7em;
+}
