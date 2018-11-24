@@ -72,6 +72,7 @@ render() {
       </div>  
     </div>
 
+
     <div className='CVbutton_container_bertocchini'>
        <a href={user.cv} className='CVbutton_bertocchini' target='_blank'> CV </a>
     </div>
