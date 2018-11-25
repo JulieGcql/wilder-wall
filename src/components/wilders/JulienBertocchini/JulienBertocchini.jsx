@@ -3,6 +3,7 @@ import './JulienBertocchini.scss';
 import github from './github.png';
 import linkedin from './linkdin.png';
 import mail from './mail.png';
+import { Header } from 'semantic-ui-react';
 
 
 
@@ -31,18 +32,20 @@ render() {
   // }
   return (
 
+    // -----------Header---------
+
     <div>
       <div className='logo_bertocchini'>
-      <h2 className='logoh2_bertocchini'>Je suis <span className="logospan_bertocchini">Julien</span></h2>
+        <h2 className='logoh2_bertocchini'>Je suis <span className="logospan_bertocchini">Julien</span></h2>
       </div>
       <div className="header_bertocchini_container">
         <div className="header_bertocchini_text">
-          <h6 className='subtitle_header_bertocchini'>Developeur Junior Fullstack React| Node JS</h6>
+          <h6 className='subtitle_header_bertocchini'>Développeur Junior Fullstack React| Node JS</h6>
           <h2 className='title_header_bertocchini'>Nouvel <br/>arrivage</h2>
         </div>
       </div>
     
-
+      {/* -----------Body--------- */}
 
     <div className='body_bertocchini_container'>
       <div className='profil_bertocchini'>
@@ -68,6 +71,7 @@ render() {
         </div>
       </div>  
     </div>
+
 
     <div className='CVbutton_container_bertocchini'>
        <a href={user.cv} className='CVbutton_bertocchini' target='_blank'> CV </a>
