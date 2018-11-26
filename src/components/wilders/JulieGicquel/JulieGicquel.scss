@@ -20,7 +20,9 @@
   // background-position-y: 487px;
   color: black;
   // background-position-y: 36vw;
-  font-family: 'Press Start 2P', cursive;
+  h1, h2, h3, h4, h5, h6, p, a {
+    font-family: 'Press Start 2P', cursive !important;
+  }
 }
 
 .Gicquel_Photo {
@@ -32,11 +34,9 @@
 
 // BODY //
 
-// .Gicquel_Infos, .Gicquel_Wild, .Gicquel_Contact, .Gicquel_CV {
-//   margin-left: 150px;
-//   margin-right: 150px;
-//   margin-top: 30px;
-// }
+.Gicquel_Contact {
+  padding-top: 5vh;
+}
 
 .Gicquel_infosContainer {
   display: flex;
