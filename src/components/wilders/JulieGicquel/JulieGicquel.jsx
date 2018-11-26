@@ -58,7 +58,7 @@ export default class JulieGicquel extends Component {
           <img src={user.photo} className="Gicquel_Photo" alt="Julie Gicquel"/>
           <div className="Gicquel_Titre">
             <h2 className="Gicquel_Titre">{`${user.firstname} ${user.lastname}`}</h2>
-            <h3 className="Gicquel_Titre">Développeuse web junior fullstack React.js/Node.js</h3>
+            <h3 className="Gicquel_sousTitre">Développeuse web junior fullstack React.js/Node.js</h3>
           </div>
         </div>
         <div className="Gicquel_Sections">
