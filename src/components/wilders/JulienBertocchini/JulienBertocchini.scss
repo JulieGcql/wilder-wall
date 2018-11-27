@@ -31,7 +31,7 @@
     font-family: 'Poppins', sans-serif !important;
     font-size: 5vh;
     display: flex;
-    justify-content: end;
+    
 
     .header_bertocchini_text {
         align-self: start;
@@ -78,10 +78,9 @@
 
         .text_container_bertocchini{
             display:flex;
+            font-family: 'Poppins', sans-serif !important;
         
         }
-
-
 
     }
 
@@ -128,11 +127,12 @@
     padding: .5em .75em;
     display: flex;
     margin: 2vh;
+    font-family: 'Poppins', sans-serif !important;
     
     color: #fff;
     
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.34);
 }
 
 .title_bertocchini:before,
@@ -165,8 +165,11 @@
 .titleh2_bertocchini{
     
     font-size: 14vh;
+    font-size: 7vw;
     font-weight: 900;
     align-self: center;
+    font-family: 'Poppins', sans-serif !important;
+    
     
 }
 
@@ -345,6 +348,7 @@
     width: 90vw;
     margin: 5%;
     font-family: 'Poppins', sans-serif !important;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.34);
     
 }
 
